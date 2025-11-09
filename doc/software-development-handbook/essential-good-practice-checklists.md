@@ -57,12 +57,12 @@ guides. Exceptions are noted where they may apply.
 
 | **Item** |  |  | **Guide or standard** | **Exceptions** |
 | --- | --- | --- | --- | --- |
-| 30 | Your software solution is organised according to our conventions. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) | This may not be feasible for some legacy codebases. |
-| 31 | You provide a *README.md* file in the root folder. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
-| 32 | You use *SOLID* principles to make your code more testable. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
-| 33 | You follow our conventions for naming unit tests. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
-| 34 | You employ a common approach to logging exceptions. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
-| 35 | You use our common SQL Prompt settings files to format T-SQL. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
+| 30 | Your software solution is organised according to our conventions. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) | This may not be feasible for some legacy codebases. |
+| 31 | You provide a *README.md* file in the root folder. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
+| 32 | You use *SOLID* principles to make your code more testable. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
+| 33 | You follow our conventions for naming unit tests. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
+| 34 | You employ a common approach to logging exceptions. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
+| 35 | You use our common SQL Prompt settings files to format T-SQL. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
 | 36 | Your software meets all relevant accessibility standards. | ☐ | [User interface and accessibility standards](user-interface-and-accessibility-standards.md) |  |
 | 37 | You mitigate application vulnerabilities. | ☐ | [Security](security.md) |  |
 | 38 | You perform code analysis checks | ☐ | [Security](security.md) |  |
@@ -90,7 +90,7 @@ guides. Exceptions are noted where they may apply.
 | 50 | You maintain permissions on your project to prevent improper access. | ☐ | [Use Version Control](development-principles.md) |  |
 | 51 | Your deployments are triggered by commits to source control. | ☐ | [Adopt Continuous Integration (CI) and Continuous Delivery (CD)](development-principles.md) | *Only applies if you practice trunk-based development.* |
 | 52 | You maintain a deployment checklist or automated build & deployment script. | ☐ | [Adopt Continuous Integration (CI) and Continuous Delivery (CD)](development-principles.md) |  |
-| 53 | You publish instructions on how to build and deploy your software in a *README* or *CONTRIBUTING* markdown file. | ☐ | [Follow our coding standards](#_FOLLOW_CODING_STANDARDS) |  |
+| 53 | You publish instructions on how to build and deploy your software in a *README* or *CONTRIBUTING* markdown file. | ☐ | [Follow our coding standards](development-principles.md#follow-coding-standards) |  |
 | 54 | You can easily rollback to a previous release when required. | ☐ | [Use Version Control](development-principles.md) |  |
 
 ### Governance of technologies

@@ -12,7 +12,7 @@ You **SHOULD format and analyse your code using SQL Prompt before
 checking into source control.**
 
 You **SHOULD configure SQL Prompt with our rule. See** [SQL Prompt
-configuration](#_SQL_Prompt_configuration) **for help with using our
+configuration](sql-prompt-configuration.md) **for help with using our
 standard SQL Prompt config files.**
 
 !!! info "Further reading and information"

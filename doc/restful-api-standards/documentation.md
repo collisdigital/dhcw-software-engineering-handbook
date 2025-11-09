@@ -157,7 +157,7 @@ developers and emphasise any prerequisites or essential concepts.
 
     *//\...how it works*
 
-### Quickstart.md -- how to get started
+### Quickstart.md - how to get started
 
 You **SHOULD** create a concise section that guides users through the
 quickest and simplest method of obtaining an example response from your
@@ -191,7 +191,7 @@ complex. Examples **SHOULD** have the following characteristics:
     *'**Trigger the sending of a questionnaire** -- using a SOAP API'*
 
 !!! tip "Practical tips"
-    Avoid duplicating basic info about the API. Link to the '[Get started](#quickstart.md-how-to-get-started)' section instead.
+    Avoid duplicating basic info about the API. Link to the '[Get started](#quickstartmd-how-to-get-started)' section instead.
 
 ### Concepts
 

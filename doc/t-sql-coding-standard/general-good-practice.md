@@ -25,7 +25,7 @@ You **SHOULD**: -
     source control.**
 
 -   **Configure SQL Prompt using our config files. See** [SQL Prompt
-    configuration](#_SQL_Prompt_configuration) **for help.**
+    configuration](sql-prompt-configuration.md) **for help.**
 
 **You **SHOULD NOT**: -**
 

@@ -32,7 +32,7 @@
 | - Aliases | Checks **Assign aliases** > [Note]: Custom aliases should be > used to provide consistency across an > application, but these cannot be defined > here. |
 | - Special characters | Uses default settings |
 | **Format** |  |
-| - Styles | For formatting styles see [SQL Prompt formatting style file](#_SQL_Prompt_formatting) In addition to default settings checks > ***Expand wildcards*** > > ***Qualify object names*** > > ***Insert semicolons*** > > ***Apply column alias style*** > > ***Column AS alias*** > > ***Add/remove square brackets*** > > ***Remove unnecessary brackets*** > > ***Add/remove AS keyword on alias definition > for tables and views*** > > ***Add AS keyword*** |
+| - Styles | For formatting styles see [SQL Prompt formatting style file](#82-sql-prompt-formatting-style-file) In addition to default settings checks > ***Expand wildcards*** > > ***Qualify object names*** > > ***Insert semicolons*** > > ***Apply column alias style*** > > ***Column AS alias*** > > ***Add/remove square brackets*** > > ***Remove unnecessary brackets*** > > ***Add/remove AS keyword on alias definition > for tables and views*** > > ***Add AS keyword*** |
 | **Tabs** |  |
 | - History | Sets ***Maximum number of tabs to restore:*** to [5] Unchecks ***Automatically reconnect restored tabs*** |
 | - Color | Uses default settings [Note]: Colour can be used to differentiate environments. However, separate credentials (e.g. NatTd, GIGNWI) should be used to connect to development and production environments; these accounts can support their own SQL Prompt settings. |
@@ -93,5 +93,5 @@ Commas before: -
 
 Indentation aids readability. However, long expressions may appear
 distorted when wrapped. See the section [Exceptions prove the
-rule](#_EXCEPTIONS_PROVE_THE).
+rule](exceptions-prove-the-rule.md).
 

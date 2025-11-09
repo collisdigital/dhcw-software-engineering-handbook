@@ -102,7 +102,7 @@ reusable components the organisation shared feed.
 | **Organisation feed** | DHCW_Global_Dependencies | DHCW_Global_Dependencies |
 | **project feed** | \<Project Name\> | NHS Wales Patient Portal |
 | **package ID** | \[\<DHCW.\>\]\<ProjectName\>.\<ComponentName\> | DHCW.PortalUI.Validation |
-| **Package Version** | See [Publishing Packages: Versioning](#_PUBLISHING_PACKAGES:_VERSIONING) | 1.1.0 |
+| **Package Version** | See [Publishing Packages: Versioning](#versioning-conventions) | 1.1.0 |
 | **AUTHORS** | Team or developer name | Phoenix Portal Team |
 | **DESCRIPTION** | A short description for UI display. | Validation library for UI components in the NHS Wales Patient Portal. This library..... |
 | **COPYright** | Copyright (c) DHCW \<Year\> | Copyright (c) DHCW 2024 |
