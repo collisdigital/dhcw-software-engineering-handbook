@@ -83,7 +83,7 @@ You **SHOULD**: -
     level instead.
 
 !!! tip "Practical tips"
-    **Use Redgate** SQL Prompt to help you implement code analysis rules. See [Follow our code layout rules](#_Follow_our_code)
+    **Use Redgate** SQL Prompt to help you implement code analysis rules. See [Follow our code layout rules](follow-our-code-layout-rules.md)
 
 !!! info "Further reading and information"
     [Code Analysis - Product Documentation (re d-gate.com)](https://documentation.red-gate.com/codeanalysis)

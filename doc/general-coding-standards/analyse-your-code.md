@@ -58,7 +58,7 @@ Generate and publish a code coverage report in your pipelines.
 
 ## Check code for style and quality
 
-Ensure your code follows the style ([naming](#_NAMING),
+Ensure your code follows the style ([naming](follow-microsofts-coding-conventions.md#naming),
 [layout](follow-microsofts-coding-conventions.md), [language](follow-microsofts-coding-conventions.md))
 and quality conventions described or referenced in this document.
 

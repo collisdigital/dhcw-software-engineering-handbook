@@ -11,7 +11,7 @@
 | 7 | You analyse code for style and quality. | ☐ | [Check code for style and quality](analyse-your-code.md) |  |
 | 8 | You analyse code for security vulnerabilities. | ☐ | [Analyse your code](analyse-your-code.md) |  |
 | 9 | You share your analysis rules in source control. | ☐ | [Analyse your code](analyse-your-code.md) |  |
-| 10 | You perform code analysis in build pipelines. | ☐ | [Run code analysis in your pipelines](#_RUN_CODE_ANALYSIS) |  |
+| 10 | You perform code analysis in build pipelines. | ☐ | [Run code analysis in your pipelines](analyse-your-code.md#run-code-analysis-in-your-pipelines-as-well-as-the-ide) |  |
 | 11 | You check third party dependencies for security vulnerabilities. | ☐ | [Check third-party packages](analyse-your-code.md) |  |
 | 12 | You publish metrics to your dashboards. | ☐ | [Publish and review ,metrics](analyse-your-code.md) |  |
 
