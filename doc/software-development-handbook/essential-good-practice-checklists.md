@@ -4,7 +4,7 @@ Use these checklists to help follow our Principles & Standards. We
 cross-reference each item to a relevant section in our standards or
 guides. Exceptions are noted where they may apply.
 
-### Requirements gathering, analysis and specifications
+## Requirements gathering, analysis and specifications
 
 | **Item** |  |  | **Guide or standard** | **Exceptions** |
 | --- | --- | --- | --- | --- |

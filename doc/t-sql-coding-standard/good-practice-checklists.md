@@ -15,7 +15,6 @@ standards and guides; Exceptions are noted where they may apply.
 | 5 | You analyse T-SQL against Redgate code analysis rules | ☐ | *T-SQL coding standard, [7.6](apply-code-analysis-rules.md)* |  |
 | 6 | You format T-SQL using our common configuration settings | ☐ | *T-SQL coding standard, [7.20](follow-our-code-layout-rules.md)* |  |
 
-
     Index](https://www.brentozar.com/blitzindex/) makes use of SQL
     Server's Missing Index Dynamic Management Views (DMVs)
 

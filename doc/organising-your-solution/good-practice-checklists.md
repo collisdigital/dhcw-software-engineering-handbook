@@ -21,4 +21,3 @@ standards and guides; Exceptions are noted where they may apply.
 | 10 | You provide examples with your solution | ☐ | [*Include an examples folder*](provide-an-examples-folder-rootfoldernameexamples.md) |  |
 
     FHIR.
-

@@ -1,6 +1,6 @@
 # Essential good practice checklist
 
-| ** N o . ** | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
+| **N o .** | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
 | --- | --- | --- | --- | --- |
 | 1 | You store program code in our source control systems. | ☐ | [Use our source control sys tems](use-our-source-control-systems.md) |  |
 | 2 | You have planned a clear repo structure. | ☐ | [Establish a clear repo structu re](establish-a-clear-repo-structure.md) |  |
