@@ -4,9 +4,9 @@
 
 These standards apply to RESTful APIs designed and built for:
 
--   Internal use within the organisation.
+- Internal use within the organisation.
 
--   External use by clients, partners, or third parties.
+- External use by clients, partners, or third parties.
 
 A [good practice checklist](essential-good-practice-checklist.md) is also
 included to assist teams in achieving compliance.
@@ -15,18 +15,17 @@ included to assist teams in achieving compliance.
 
 These standards do not apply to:
 
--   Non-RESTful APIs, including GraphQL, gRPC, and event-driven APIs
+- Non-RESTful APIs, including GraphQL, gRPC, and event-driven APIs
     (e.g. Azure Functions).
 
--   APIs designed primarily to handle large binary data (e.g. image or
+- APIs designed primarily to handle large binary data (e.g. image or
     file delivery).
 
--   Topics outside API design and implementation, such as Domain-driven
+- Topics outside API design and implementation, such as Domain-driven
     design or microservices architecture.
 
--   Infrastructure, networking, or Web Application Firewalls (WAF).
+- Infrastructure, networking, or Web Application Firewalls (WAF).
 
--   API publishing pipelines (e.g. via Apigee).
+- API publishing pipelines (e.g. via Apigee).
 
--   Telemetry, monitoring, or general software development practices.
-
+- Telemetry, monitoring, or general software development practices.

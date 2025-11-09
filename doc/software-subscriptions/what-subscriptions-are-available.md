@@ -58,4 +58,3 @@ managed vary. Speak to the Software Development Manager for help.
 
 !!! tip "Practical tips"
     It is **RECOMMENDED** you check plans for ongoing software assurance when requesting a subscription.
-

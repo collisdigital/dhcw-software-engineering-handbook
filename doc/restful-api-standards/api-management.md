@@ -24,12 +24,12 @@ Appendix A.
 
 You **MAY** deprecate and retire an API endpoint if it is:
 
--   Replaced by a new endpoint that provides equivalent or enhanced
+- Replaced by a new endpoint that provides equivalent or enhanced
     capabilities.
 
--   Not fit for purpose, for example it is insecure.
+- Not fit for purpose, for example it is insecure.
 
--   Unused or of limited usage.
+- Unused or of limited usage.
 
 ### Retirement timeline
 
@@ -41,18 +41,18 @@ endpoint **MUST** no longer be available for use.
 
 To deprecate an API endpoint you **MUST**:
 
--   Add a deprecation notice to your documentation stating the
+- Add a deprecation notice to your documentation stating the
     deprecation date.
 
--   Add a deprecation header with the deprecation date.
+- Add a deprecation header with the deprecation date.
 
--   Email subscribed users with the deprecation date - as the date
+- Email subscribed users with the deprecation date - as the date
     approaches, emails **SHOULD** be sent more frequently.
 
--   Keep the endpoint available for use and maintain normal service
+- Keep the endpoint available for use and maintain normal service
     levels.
 
--   Permit no further integrations, although you **MAY** allow consumers
+- Permit no further integrations, although you **MAY** allow consumers
     in the latter stages of onboarding to complete sign-up.
 
 You **SHOULD** make no further updates unless necessary.
@@ -61,17 +61,17 @@ You **SHOULD** make no further updates unless necessary.
 
 To retire an API endpoint, you **MUST**:
 
--   Add a retirement notice to your documentation stating the retirement
+- Add a retirement notice to your documentation stating the retirement
     date, giving no less than **6 months'** notice.
 
--   Add a sunset header with the retirement date.
+- Add a sunset header with the retirement date.
 
--   Provide a migration guide where applicable.
+- Provide a migration guide where applicable.
 
--   Keep the endpoint available for use and maintain normal service
+- Keep the endpoint available for use and maintain normal service
     levels.
 
--   Permit no further integrations.
+- Permit no further integrations.
 
 You **SHOULD** make no further updates unless necessary.
 
@@ -210,4 +210,3 @@ This ensures a controlled flow of traffic, preventing overloads and
 optimising performance. No manual configuration is required; the API
 platform team oversees Apigee, guaranteeing effective rate limiting for
 a reliable and responsive API experience.
-

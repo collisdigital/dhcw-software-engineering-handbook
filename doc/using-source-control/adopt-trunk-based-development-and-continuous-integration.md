@@ -7,10 +7,10 @@ long-lived branches.
 
 **RECOMMENDATIONS**:
 
--   Write a comprehensive suite of automated tests to keep branches
+- Write a comprehensive suite of automated tests to keep branches
     deployable.
 
--   Aim for continuous integration and frequent deployments from the
+- Aim for continuous integration and frequent deployments from the
     trunk.
 
 **When to Consider Alternatives**:
@@ -23,4 +23,3 @@ branches.
     [It's Not Continuous Delivery If You Can't Deploy Right Now - YouTube](https://www.youtube.com/watch?v=po712VIZZ7M)
 
     [Git patterns and anti-patterns for successful developers - YouTube](https://www.youtube.com/watch?v=t_4lLR6F_yk)
-

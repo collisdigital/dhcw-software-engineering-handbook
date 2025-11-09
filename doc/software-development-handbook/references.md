@@ -15,4 +15,3 @@
 | SOP-OSD-004 | Web Applications |
 | SOP-OSD-005 | Encryption in Transit |
 | SOP-OSD-006 | Application Programming Interfaces |
-

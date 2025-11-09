@@ -10,4 +10,3 @@ types of tests you need.
 | Code w alk-throughs and debugging | Ask developers to walk you through their tests and include these in your strategy and plans. |
 | No n-functional stress tests | The techniques above go a long way to providing confidence. But also consider using stress tests, particularly when writing an automated software process. They need not be too involved. Developers can write simple tests using T-SQL -- see [FURTHER READING](further-reading.md). Again, include them in your strategy and plans. |
 | Monitoring and surveillance | Post deployment monitoring and surveillance is beyond the scope of this guide. But teams should continue to test for lost updates and deadlocks after deployment. |
-

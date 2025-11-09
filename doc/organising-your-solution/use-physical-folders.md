@@ -8,4 +8,3 @@ With no folders to look at, the reader is reliant on our understanding
 of the project names without opening the solution. To overcome this, you
 **SHOULD** follow our first convention and use physical folders and folder
 names.
-

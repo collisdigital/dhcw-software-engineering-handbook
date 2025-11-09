@@ -3,9 +3,9 @@
 Agents execute tasks in an Azure Pipeline and are available in two
 types:
 
--   **Self-Hosted Agents**: Managed on your infrastructure.
+- **Self-Hosted Agents**: Managed on your infrastructure.
 
--   **Microsoft-Hosted Agents**: Fully managed by Microsoft and
+- **Microsoft-Hosted Agents**: Fully managed by Microsoft and
     available on demand.
 
 ## Choose an agent type
@@ -16,9 +16,9 @@ Choosing the right agent type depends on your needs-- see below.
 | --- | --- | --- |
 | **COST** | Pay for VMs; build minutes/parallel jobs covered by Visual Studio Enterprise subscriptions. | Pay per minute beyond free-tier usage. |
 | **MANAGEMENT** | Manual setup and maintenance required. | Fully managed; no setup needed. |
-| * *FLEXIBILITY** | Full control over tools and network configuration. | Preconfigured environments; limited customisation. |
-| * *SCALABILITY** | Limited by VM capacity and no. of available Visual Studio Enterprise subscriptions. | Scales on demand; no infrastructure limits. |
-| ** AVAILABILITY** | Restricted to DevTest VM uptime: Mon--Fri: 7 PM--7 AM. Sat & Sun: Unavailable. | Available without downtime. |
+| **FLEXIBILITY** | Full control over tools and network configuration. | Preconfigured environments; limited customisation. |
+| **SCALABILITY** | Limited by VM capacity and no. of available Visual Studio Enterprise subscriptions. | Scales on demand; no infrastructure limits. |
+| **AVAILABILITY** | Restricted to DevTest VM uptime: Mon--Fri: 7 PM--7 AM. Sat & Sun: Unavailable. | Available without downtime. |
 
 ## Our recommendation
 
@@ -35,32 +35,32 @@ management overheads and VM costs.
 
 To configure a self-hosted agent:
 
--   Provision an Azure Virtual Machine.
+- Provision an Azure Virtual Machine.
 
--   Add the agent to an existing pool (create a new pool if needed).
+- Add the agent to an existing pool (create a new pool if needed).
 
--   Install and configure the agent software from Azure DevOps.
+- Install and configure the agent software from Azure DevOps.
 
--   Run the agent as a service for automatic restarts.
+- Run the agent as a service for automatic restarts.
 
 ## Securing a self-hosted agent
 
 To ensure agent security:
 
--   Use separate pools for different projects to reduce risk.
+- Use separate pools for different projects to reduce risk.
 
--   Assign a dedicated pool for production deployments.
+- Assign a dedicated pool for production deployments.
 
--   Restrict access to the agent folder to authorised personnel.
+- Restrict access to the agent folder to authorised personnel.
 
--   Clean temporary files in the agent's build folder regularly.
+- Clean temporary files in the agent's build folder regularly.
 
--   Keep the agent software updated.
+- Keep the agent software updated.
 
--   Run the agent under a service account (e.g., Network Service or
+- Run the agent under a service account (e.g., Network Service or
     Local Service).
 
--   Avoid using admin or high-privilege accounts.
+- Avoid using admin or high-privilege accounts.
 
 ## Recommended naming conventions
 
@@ -83,4 +83,3 @@ readability.
     [Allowed address lists and network connections - Azure DevOps \| Microsoft Le arn](https://learn.microsoft.com/en-gb/azure/devops/organizations/security/allow-list-ip-url?view=azure-devops&tabs=IP-V4)
 
     [Configure GitHub Advanced Security for Azure DevOps -- Azure Repos \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/repos/security/configure-github-advanced-security-features?view=azure-devops&tabs=yaml)
-

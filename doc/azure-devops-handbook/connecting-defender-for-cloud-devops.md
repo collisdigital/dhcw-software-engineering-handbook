@@ -6,16 +6,16 @@ Security team about potential costs first.
 
 The following practices are **RECOMMENDED**:
 
--   **Connect to Defender for Cloud**: Organisation Owners **MAY** link
+- **Connect to Defender for Cloud**: Organisation Owners **MAY** link
     > Azure DevOps to Defender for Cloud for security insights. This
     > will also install the *Defender for DevOps Container Mapping*
     > extension to protect containerized applications.
 
--   **Enable Pull Request Annotations**: Turn on annotations to
+- **Enable Pull Request Annotations**: Turn on annotations to
     > highlight security issues in pull requests, so they can be fixed
     > before merging.
 
--   **Review Alerts and Recommendations**: Regularly review Defender for
+- **Review Alerts and Recommendations**: Regularly review Defender for
     Cloud alerts and follow recommendations to reduce risks.
 
 !!! info "Further reading and information"
@@ -28,4 +28,3 @@ The following practices are **RECOMMENDED**:
     [Microsoft Security DevOps Extension for Azure DevOps \| GitHub](https://github.com/microsoft/security-devops-azdevops?tab=readme-ov-file)
 
     [Enable Pull Request Annotations \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/defender-for-cloud/enable-pull-request-annotations)
-

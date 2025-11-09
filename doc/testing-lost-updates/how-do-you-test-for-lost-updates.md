@@ -23,4 +23,3 @@ recommendations found in a 2018 report.
 
 !!! info "Further reading and information"
     RPT-231026APRIL18 -WAP Redirect RCA.docx
-

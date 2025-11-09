@@ -3,12 +3,12 @@
 Commit messages are essential for understanding the history, context,
 and purpose of code changes. Following these standards will:
 
--   Improve collaboration and communication across teams.
+- Improve collaboration and communication across teams.
 
--   Make it easier to debug, trace changes and manage the codebase
+- Make it easier to debug, trace changes and manage the codebase
     effectively.
 
--   Ensure consistency and professionalism in your projects.
+- Ensure consistency and professionalism in your projects.
 
 You **MUST** write a commit message for every change.
 
@@ -17,23 +17,23 @@ format.
 
 You **SHOULD:**
 
--   Use the Conventional Commits specification to structure your
+- Use the Conventional Commits specification to structure your
     messages.
 
--   Link commits to work items, bugs, or tasks using identifiers.
+- Link commits to work items, bugs, or tasks using identifiers.
 
 !!! tip "Practical tips"
     In Visual Studio, include the work item ID, e.g., #123 , in your commit message. Visual Studio will automatically link the commit to the corresponding work item.
 
 Additional **RECOMMENDATIONS**:
 
--   Consider tools like VsCommitizen or commitlint to help enforce
+- Consider tools like VsCommitizen or commitlint to help enforce
     > standards.
 
--   Use branch policies to ensure commit messages comply with
+- Use branch policies to ensure commit messages comply with
     > requirements.
 
--   Use \"because\" in your message to clarify the reasoning behind
+- Use \"because\" in your message to clarify the reasoning behind
     > changes.
 
 !!! info "Further reading and information"
@@ -70,19 +70,19 @@ to *\<type\>* if the commit introduces a breaking change (e.g. feat!).
 
 The *\<summary\>* **MUST**:
 
--   Be 50 characters or fewer.
+- Be 50 characters or fewer.
 
--   Use the imperative mood (e.g. \"Add login validation\").
+- Use the imperative mood (e.g. \"Add login validation\").
 
 The *\<body\>* **SHOULD**:
 
--   Provide additional context (e.g. **why** a change was made).
+- Provide additional context (e.g. **why** a change was made).
 
--   Be wrapped at 72 characters per line for readability.
+- Be wrapped at 72 characters per line for readability.
 
 Additional **RECOMMENDATIONS**:
 
--   Avoid ending with punctuation.
+- Avoid ending with punctuation.
 
 !!! example "Examples of good practice"
     *feat: Add support for user authentication*
@@ -115,4 +115,3 @@ Additional **RECOMMENDATIONS**:
     [How to Write Good Commit Messages: A Practical Git Guide (freecodecamp.org)](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 
     [Writing Meaningful Commit Messages --- Beanstalk (beanstalkapp.com)](https://blog.beanstalkapp.com/post/134929320564/detailed-commit-messages-are-an-essential-part-of)
-

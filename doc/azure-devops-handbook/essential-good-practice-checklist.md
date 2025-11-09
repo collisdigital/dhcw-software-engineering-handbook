@@ -22,4 +22,3 @@
 | --- | --- | --- | --- | --- |
 | 16 | You use Azure Test Plans to store and manage manual tests | ☐ | [Defining and Running Test Cases](defining-and-running-test-cases-with-azure-test-plans.md) |  |
 | 17 | You control and manage costs | ☐ | [Managing costs](managing-costs.md) |  |
-

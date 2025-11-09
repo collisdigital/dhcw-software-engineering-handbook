@@ -20,8 +20,5 @@ standards and guides; Exceptions are noted where they may apply.
 | 9 | You include a *deploy* folder | ☐ | [*Include a deploy folder*](provide-a-deploy-folder-rootfoldernamedeploy.md) | May only be required if deploying to cloud |
 | 10 | You provide examples with your solution | ☐ | [*Include an examples folder*](provide-an-examples-folder-rootfoldernameexamples.md) |  |
 
-[^1]: For example, if you are building on published specs -- such HL7
     FHIR.
-
-[^2]: .*exe, .ps1 .sql* and .*cmd* files for example.
 

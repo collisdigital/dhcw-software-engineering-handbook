@@ -25,4 +25,3 @@ this impacts others.
     [.NET Core Opinion #4 - Increase Productivity with Dev Scripts (odetocod e.com)](https://odetocode.com/blogs/scott/archive/2018/09/21/net-core-opinion-4-ndash-increase-productivity-with-dev.aspx)
 
     [.NET Core Opinion #5 - Deployment Scripts and Templates (odet ocode.com)](https://odetocode.com/blogs/scott/archive/2018/10/17/net-core-opinion-5-deployment-scripts-and-templates.aspx)
-

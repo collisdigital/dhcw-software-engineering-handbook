@@ -25,4 +25,3 @@ example.
     [About READMEs - GitHub Docs](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes)
 
     [Welcome - Microsoft Style Guide \| Microsoft L earn](https://learn.microsoft.com/en-gb/style-guide/welcome/)
-

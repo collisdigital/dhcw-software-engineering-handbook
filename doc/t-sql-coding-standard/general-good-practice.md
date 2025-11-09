@@ -5,49 +5,49 @@
 
 You **SHOULD**: -
 
--   **Check your SQL application is performant. You may find your
+- **Check your SQL application is performant. You may find your
     support team or Database Administrator (DBA)** may be able to help.
 
--   Review your code to address any issues, such as performance and
+- Review your code to address any issues, such as performance and
     security considerations.
 
--   **Share code using code snippets and a common repository.**
+- **Share code using code snippets and a common repository.**
 
--   Conform to ANSI standards wherever possible.
+- Conform to ANSI standards wherever possible.
 
--   Prefer CAST to CONVERT
+- Prefer CAST to CONVERT
 
--   Prefer SET to SELECT when assigning variables.
+- Prefer SET to SELECT when assigning variables.
 
--   Prefer COALESCE to ISNULL
+- Prefer COALESCE to ISNULL
 
--   **Format and analyse your code using SQL Prompt before checking into
+- **Format and analyse your code using SQL Prompt before checking into
     source control.**
 
--   **Configure SQL Prompt using our config files. See** [SQL Prompt
+- **Configure SQL Prompt using our config files. See** [SQL Prompt
     configuration](sql-prompt-configuration.md) **for help.**
 
 **You **SHOULD NOT**: -**
 
--   Use deprecated features.
+- Use deprecated features.
 
--   Use dynamic SQL. If you cannot avoid this then call it using
+- Use dynamic SQL. If you cannot avoid this then call it using
     sp_executesql rather than the EXECUTE statement.
 
--   Expect your DBA to performance tune your queries but do ask them for
+- Expect your DBA to performance tune your queries but do ask them for
     advice. Particularly what tools to use.
 
--   Use undocumented stored procedures.
+- Use undocumented stored procedures.
 
--   **Create objects that flout the single responsibility pattern. Such
+- **Create objects that flout the single responsibility pattern. Such
     as: -**
 
-1.  **Entity-attribute-value tables.**
+1. **Entity-attribute-value tables.**
 
-2.  **Generic stored procedures with no specific (or multiple) use
+2. **Generic stored procedures with no specific (or multiple) use
     > cases.**
 
-3.  **Using a single table to hold all lookup values, metadata, and
+3. **Using a single table to hold all lookup values, metadata, and
     > domain or reference data.**
 
 !!! tip "Practical tips"
@@ -65,4 +65,3 @@ You **SHOULD**: -
     [SQL Code Smells - Simple Talk (red-gate.com)](https://www.red-gate.com/simple-talk/databases/sql-server/t-sql-programming-sql-server/sql-code-smells/)
 
     [Discontinued database engine functionality - SQL Server \| Microsoft Learn](https://learn.microsoft.com/en-gb/sql/database-engine/discontinued-database-engine-functionality-in-sql-server?view=sql-server-ver16)
-

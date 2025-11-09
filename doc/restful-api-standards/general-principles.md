@@ -2,26 +2,27 @@
 
 The following principles guide these standards:
 
--   Prioritise user needs.
+- Prioritise user needs.
 
--   Treat APIs as products, with dedicated teams, lifecycles, and
+- Treat APIs as products, with dedicated teams, lifecycles, and
     roadmaps.
 
--   Make APIs the primary interface for system interactions.
+- Make APIs the primary interface for system interactions.
 
--   Build APIs that are easy to learn, use, reuse, and integrate.
+- Build APIs that are easy to learn, use, reuse, and integrate.
 
 ```{=html}
 <!-- -->
 ```
--   Enable portability with container technologies like Docker.
 
--   Adopt DevOps practices to deliver continuous value.
+- Enable portability with container technologies like Docker.
 
--   Build APIs that conform to HL7 FHIR as a foundational
+- Adopt DevOps practices to deliver continuous value.
+
+- Build APIs that conform to HL7 FHIR as a foundational
     > interoperability standard.
 
--   Use REST as the default design style, although you **MAY** choose
+- Use REST as the default design style, although you **MAY** choose
     > alternatives when justified.
 
 !!! tip "Practical tips"
@@ -37,4 +38,3 @@ The following principles guide these standards:
     [The API Product Mindset (google.com)](https://cloud.google.com/files/apigee/apigee-api-product-mindset-ebook.pdf)
 
     [The principles --- Good Services ](https://good.services/15-principles-of-good-service-design)
-

@@ -24,31 +24,31 @@ to build repeatable, scalable Azure pipelines.
 
 Key considerations:
 
--   **Use YAML:** Prefer YAML pipelines for version control and sharing
+- **Use YAML:** Prefer YAML pipelines for version control and sharing
     configurations.
 
--   **Modular Design:** Create reusable templates & separate stages
+- **Modular Design:** Create reusable templates & separate stages
     (e.g. Build, Test, Deploy).
 
--   **Gradual Deployment:** Use progressive strategies (e.g. DevTest \>
+- **Gradual Deployment:** Use progressive strategies (e.g. DevTest \>
     UAT \> Prod).
 
--   **Integrate Security:** Include code analysis and vulnerability
+- **Integrate Security:** Include code analysis and vulnerability
     scanning.
 
--   **Automated Testing:** Run automated tests with coverage reporting.
+- **Automated Testing:** Run automated tests with coverage reporting.
 
--   **Approvals**
+- **Approvals**
 
-    -   Pre-approval checks are **RECOMMENDED** for DevTest and UAT.
+  - Pre-approval checks are **RECOMMENDED** for DevTest and UAT.
 
-    -   Pre-approval checks **SHOULD** be in place before deploying to
+  - Pre-approval checks **SHOULD** be in place before deploying to
         Prod**.**
 
--   **Secure Secrets:** Use tools like Azure Key Vault to manage
+- **Secure Secrets:** Use tools like Azure Key Vault to manage
     secrets.
 
--   **Store Artifacts:** Retain build outputs for traceability.
+- **Store Artifacts:** Retain build outputs for traceability.
 
 !!! tip "Practical tips"
     Not all pipelines need every feature; apply those relevant to the pipeline\'s purpose.
@@ -77,7 +77,7 @@ than YAML.
 | **Pipeline Run \*** **(YAML name)** | \$ (Build.DefinitionName)\_ \$(SourceBranchName)\_ \$( Date:yyyyMMdd).\$(Rev:r) | welshpa s-web-ci_main_20241203.1 |
 | **STAGE** | PascalCase, descriptive | Build, Test, DeployToProd |
 | **JOB** | PascalCase, descriptive | RunUnitTests, BuildDockerImage, DeployToProd |
-| * *ENVIRONMENT** | \<DevTest \| UAT \ PROD\> | DevTest, UAT, Prod |
+| **ENVIRONMENT** | \<DevTest \| UAT \ PROD\> | DevTest, UAT, Prod |
 | **DEPLOYMENT** | D eployTo\<E*nvironment*\> | DeployToDevTest, DeployToUAT, DeployToProd |
 | **VARIABLES** | PascalCase, descriptive | KeyVaultName |
 | **LIBRARY VARIABLES** | *Lib-\<name\>* | Lib-ApiEndpoint |
@@ -92,4 +92,3 @@ than YAML.
 
 **Automatically link work items included:** In Pipeline settings choose
 to connect work items with each build result.
-

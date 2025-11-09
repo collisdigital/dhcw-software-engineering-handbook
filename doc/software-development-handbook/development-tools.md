@@ -80,12 +80,11 @@ security risks.
 If you need to use new or alternative tools you **SHOULD** follow these
 rules:
 
--   **Use widely adopted frameworks**: Choose those with dedicated
+- **Use widely adopted frameworks**: Choose those with dedicated
     support, follow open standards and have good documentation.
 
--   **Check licencing**: Ensure Terms and Conditions are suitable for
+- **Check licencing**: Ensure Terms and Conditions are suitable for
     use.
 
--   **Learn from others**: Base decisions on the experience gained by
+- **Learn from others**: Base decisions on the experience gained by
     other teams.
-

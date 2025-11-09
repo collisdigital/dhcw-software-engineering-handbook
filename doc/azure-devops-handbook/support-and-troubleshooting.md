@@ -5,25 +5,25 @@ Follow these steps to get help:
 
 ## General support
 
--   **Check Service Notifications**: For updates about issues or
+- **Check Service Notifications**: For updates about issues or
     disruptions.
 
--   **Check Microsoft Service Status**: Visit [Azure DevOps -
+- **Check Microsoft Service Status**: Visit [Azure DevOps -
     Status](https://status.dev.azure.com/) for service updates.
 
--   **Monitor the Developer Channel**: Check the [Visual Studio
+- **Monitor the Developer Channel**: Check the [Visual Studio
     Developer Azure DevOps
     Channel](https://developercommunity.visualstudio.com/AzureDevOps) to
     upvote relevant issues.
 
--   **Ask a Project Admin**: Contact your Project Administrator if you
+- **Ask a Project Admin**: Contact your Project Administrator if you
     need further help.
 
--   **Contact the Organisation Owner**: For help with unresolved issues,
+- **Contact the Organisation Owner**: For help with unresolved issues,
     speak to the Organisation Owner who can raise a support request with
     Microsoft.
 
--   **Log a Service Request:** If the Organisation Owner is unavailable
+- **Log a Service Request:** If the Organisation Owner is unavailable
     or your query is urgent, raise a service request (addressed to the
     *Corporate Application* team). This option is only available to
     users of the *NHS-Wales-Digital* Organisation.
@@ -69,4 +69,3 @@ you're using Visual Studio set the *cryptographic network provider* to
 *schannel* in the Git settings:
 
 git config \--global http.sslBackend schannel
-

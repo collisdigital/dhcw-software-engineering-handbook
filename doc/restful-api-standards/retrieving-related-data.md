@@ -41,10 +41,10 @@ expand **MUST** embed related data directly within the response.
 
 Additional **RECOMMENDATIONS**:
 
--   **Separate URLs vs Query Parameters**: Use query parameters only
+- **Separate URLs vs Query Parameters**: Use query parameters only
     when they add value. For complex data retrieval, consider GraphQL.
 
--   **Balance Performance and Usability**: Overuse of expand can degrade
+- **Balance Performance and Usability**: Overuse of expand can degrade
     performance, while excessive nesting complicates API navigation.
 
 !!! info "Further reading and information"
@@ -57,4 +57,3 @@ Additional **RECOMMENDATIONS**:
     [Extraneous Fetching antipattern - Azure Architecture Center \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/architecture/antipatterns/extraneous-fetching/)
 
     [Chatty I/O antipattern - Performance antipatterns for cloud apps \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/architecture/antipatterns/chatty-io/)
-

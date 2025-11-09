@@ -13,9 +13,9 @@ folder.
 We leave naming the sub folders underneath ***src*** and **test** to
 your discretion but you **SHOULD :-**
 
--   use Pascal casing when naming folders.
+- use Pascal casing when naming folders.
 
--   Follow [Microsoft's naming
+- Follow [Microsoft's naming
     advice](https://docs.microsoft.com/en-gb/windows/desktop/fileio/naming-a-file)
     when developing for Windows systems.
 
@@ -27,4 +27,3 @@ two letters in folder names.
 
 !!! info "Further reading and information"
     [Naming Files, Paths, and Namespaces - Win32 apps \| Microsoft Learn](https://learn.microsoft.com/en-gb/windows/win32/fileio/naming-a-file)
-

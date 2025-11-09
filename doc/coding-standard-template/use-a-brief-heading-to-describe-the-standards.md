@@ -9,13 +9,11 @@
 *\<USE THE TABLE BELOW TO PROVIDE ANY RELEVANT EXAMPLE*S\>
 
   -----------------------------------------------------------------------------------------------------------------------------
-                                 
+
   ------------------------------------------------------------ ----------------------------------------------------------------
-                                 
 
 !!! tip "Practical tips"
     *\<ADD ANY PRACTICAL TIPS YOU FEEL ARE PERTINENT\>*
 
 !!! info "Further reading and information"
     *\<ADD LINKS TO FURTHER INFROMATION AS **REQUIRED**. IF ADDING LINKS TO MICROSOFT DOCS, BE MINDFUL TO USE THE GB VERSION WHERE POSSIBLE.\>*
-

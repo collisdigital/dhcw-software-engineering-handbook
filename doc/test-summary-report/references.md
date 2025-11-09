@@ -9,4 +9,3 @@
 | SDS-TEM-5 | Test Summary Report |
 | WIA-SOP-71 | Wales Informatics Assurance Group (WIAG) Process |
 | N/A | [Writing checklist (sharepoint.com)](https://nhswales365.sharepoint.com/sites/DHC_ENG/SitePages/Writing-guidelines.aspx) |
-

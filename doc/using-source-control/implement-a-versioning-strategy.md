@@ -53,4 +53,3 @@ versions during builds.
     [Semantic Versioning and Patch 2.1.2 \| Alan Kent\'s Blog](https://alankent.me/2016/09/20/semantic-versioning-and-patch-2-1-2/)
 
     [API Versioning Explained \| Lightboard Series](https://www.youtube.com/watch?v=_WWr_eFRDeM)
-

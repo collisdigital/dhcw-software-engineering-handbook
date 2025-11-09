@@ -13,27 +13,27 @@ There are a couple of exceptions, but we make these clear.
 
 You **SHOULD**:
 
--   Follow Microsoft's naming conventions, considering our additional
+- Follow Microsoft's naming conventions, considering our additional
     guidance.
 
--   Use Attribute and Exception suffixes only when they clarify intent.
+- Use Attribute and Exception suffixes only when they clarify intent.
 
--   Apply Roy Osherove's naming convention for tests, allowing
+- Apply Roy Osherove's naming convention for tests, allowing
     underscores. See our
     [examples](examples.md).
 
--   Use NhsWales for the company name in namespaces. See
+- Use NhsWales for the company name in namespaces. See
     [examples](examples.md).
 
--   Name booleans to reflect true/false questions. See
+- Name booleans to reflect true/false questions. See
     [examples](examples.md).
 
 You **SHOULD NOT**:
 
--   Use \"And\", \"Or\" or generic terms like \"Util\" or \"Common\" in
+- Use \"And\", \"Or\" or generic terms like \"Util\" or \"Common\" in
     class names.
 
--   Add prefixes or suffixes except where standard conventions apply.
+- Add prefixes or suffixes except where standard conventions apply.
     > See our
     > [examples](examples.md).
 
@@ -62,19 +62,19 @@ You **SHOULD NOT**:
 
 You **SHOULD:**
 
--   Follow Microsoft's layout conventions.
+- Follow Microsoft's layout conventions.
 
--   Use continuation lines to avoid excessive scrolling and indent with
+- Use continuation lines to avoid excessive scrolling and indent with
     four spaces.
 
--   Indent wrapped statements to keep logically related segments
+- Indent wrapped statements to keep logically related segments
     aligned.
 
--   Use whitespace effectively to enhance readability.
+- Use whitespace effectively to enhance readability.
 
--   Insert empty lines to separate code blocks.
+- Insert empty lines to separate code blocks.
 
--   Align curly braces vertically.
+- Align curly braces vertically.
 
 For C#, place each curly brace on a new line, aligned with the start of
 the code block.
@@ -85,12 +85,12 @@ Exceptions apply in specific cases.
 
 You **SHOULD NOT:**
 
--   Use unnecessary vertical whitespace -- and so prevent extra
+- Use unnecessary vertical whitespace -- and so prevent extra
     scrolling.
 
--   Overuse indentation.
+- Overuse indentation.
 
--   Omit optional curly braces, as this increases error risk. Use them
+- Omit optional curly braces, as this increases error risk. Use them
     > judiciously when it improves readability. See
     > [examples](examples.md).
 
@@ -101,35 +101,35 @@ You **SHOULD NOT:**
 
 You **SHOULD**:
 
--   Follow Microsoft's commenting conventions.
+- Follow Microsoft's commenting conventions.
 
--   Use comments to explain the problem your code solves, not the code
+- Use comments to explain the problem your code solves, not the code
     > itself.
 
--   Write expressive, readable code.
+- Write expressive, readable code.
 
--   Prefer automated tests rather than rely on code comments or
+- Prefer automated tests rather than rely on code comments or
     > excessive documentation.
 
--   Remove unused code instead of commenting it out. See
+- Remove unused code instead of commenting it out. See
     > [examples](../t-sql-coding-standard/code-comments.md).
 
--   Add comments to code commits, following the Conventional Commits
+- Add comments to code commits, following the Conventional Commits
     > specification.
 
--   Use well-named automated tests as part of your documentation (see
+- Use well-named automated tests as part of your documentation (see
     > [naming](../restful-api-standards/naming.md) guidelines).
 
--   Use enumerations to self-document code and make it searchable in
+- Use enumerations to self-document code and make it searchable in
     > Visual Studio.
 
--   Ensure comments are grammatically correct and properly punctuated.
+- Ensure comments are grammatically correct and properly punctuated.
 
 You **SHOULD NOT**:
 
--   Comment to explain how C# or the .NET Class Library works.
+- Comment to explain how C# or the .NET Class Library works.
 
--   Add unnecessary or redundant comments. For example, at the top of
+- Add unnecessary or redundant comments. For example, at the top of
     > methods or classes. Provide a concise summary instead.
 
 !!! info "Further reading and information"
@@ -141,23 +141,23 @@ You **SHOULD NOT**:
 
 You **SHOULD**:
 
--   Declare C# variables close to where they are used.
+- Declare C# variables close to where they are used.
 
--   Initialize variables at the point of declaration, when possible.
+- Initialize variables at the point of declaration, when possible.
 
--   Declare JavaScript variables at the top of their scope and consider
+- Declare JavaScript variables at the top of their scope and consider
     > using \'strict mode\' to prevent hoisting.
 
--   Order parameters consistently.
+- Order parameters consistently.
 
--   Use named parameters to improve code readability. See
+- Use named parameters to improve code readability. See
     > [examples](examples.md).
 
--   Avoid methods with more than three parameters.
+- Avoid methods with more than three parameters.
 
 You **SHOULD NOT**:
 
--   Declare all variables at the beginning of a class out of habit.
+- Declare all variables at the beginning of a class out of habit.
 
 !!! info "Further reading and information"
     [Member Design Guidelines - Framework Design Guidelines \| Microsoft Learn](https://learn.microsoft.com/en-gb/dotnet/standard/design-guidelines/member)
@@ -168,26 +168,29 @@ You **SHOULD NOT**:
 
 You **SHOULD:**
 
--   Define conditionals in the positive (see examples).
+- Define conditionals in the positive (see examples).
 
 ```{=html}
 <!-- -->
 ```
--   Prefer constants or enumerations over hard-coded numerical values
+
+- Prefer constants or enumerations over hard-coded numerical values
     ('magic numbers'). Use named constants to improve readability.
 
 ```{=html}
 <!-- -->
 ```
--   Order case/switch statements logically and always include a default
+
+- Order case/switch statements logically and always include a default
     statement.
 
--   Ensure conditionals are clear and easy to understand.
+- Ensure conditionals are clear and easy to understand.
 
 ```{=html}
 <!-- -->
 ```
--   Minimise nested conditionals where possible.
+
+- Minimise nested conditionals where possible.
 
 !!! tip "Practical tips"
     Where practical, place enumerations in a namespace in their own code file.
@@ -199,28 +202,27 @@ You **SHOULD:**
 
 You **SHOULD**:
 
--   Implement a global exception handler.
+- Implement a global exception handler.
 
--   Move complex code out of try blocks into separate methods.
+- Move complex code out of try blocks into separate methods.
 
--   Handle exceptions locally, when possible, but avoid catching
+- Handle exceptions locally, when possible, but avoid catching
     unresolvable exceptions---let them bubble up to the global handler.
 
--   Log exceptions with relevant details, including stack trace and
+- Log exceptions with relevant details, including stack trace and
     context.
 
--   Use guard clauses to validate inputs early.
+- Use guard clauses to validate inputs early.
 
--   Use multiple return statements to avoid deep indentation.
+- Use multiple return statements to avoid deep indentation.
 
--   Avoid silent exceptions---always log or rethrow as needed.
+- Avoid silent exceptions---always log or rethrow as needed.
 
--   Catch specific, rather than generic, exceptions for precise
+- Catch specific, rather than generic, exceptions for precise
     handling.
 
--   Test exception handling to ensure proper behaviour, especially in
+- Test exception handling to ensure proper behaviour, especially in
     > edge cases.
 
 !!! info "Further reading and information"
     [Best Practices for exceptions - .NET \| Microsoft Learn](https://learn.microsoft.com/en-gb/dotnet/standard/exceptions/best-practices-for-exceptions)
-

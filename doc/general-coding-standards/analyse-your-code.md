@@ -79,10 +79,10 @@ third-party providers.
 
 **How Roslyn Analysers work**:
 
--   **Design-Time Analysis**: Analysers run on open files in the IDE,
+- **Design-Time Analysis**: Analysers run on open files in the IDE,
     providing immediate feedback.
 
--   **Build-Time Analysis**: Can be configured to run during builds to
+- **Build-Time Analysis**: Can be configured to run during builds to
     enforce consistent standards.
 
 Use NuGet packages to integrate analysers directly in your code. Avoid
@@ -286,4 +286,3 @@ quality.
     8. Check third party packages.
 
     9. Publish metrics.
-

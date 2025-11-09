@@ -9,4 +9,3 @@ You **SHOULD** use parent names in solution subfolder names.
 
 !!! tip "Practical tips"
     Follow SOLID principles to refactor out exposed complexities. This helps to reduce each project to its simplest form.
-

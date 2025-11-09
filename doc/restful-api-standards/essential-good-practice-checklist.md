@@ -1,6 +1,6 @@
 # Essential good practice checklist
 
-| * * N o . * * | **Checklist Item** |  | **Section Heading** | **Excep tions** |
+| ** N o . ** | **Checklist Item** |  | **Section Heading** | **Excep tions** |
 | --- | --- | --- | --- | --- |
 | 1 | APIs conform to FHIR R4. | ☐ | FHIR (Fast Healthcare Interoperability Standards) | S uitable FHIR R4 p rofiles may be unava ilable. |
 | 2 | You have identified the resource data type. | ☐ | Data Classification |  |
@@ -17,7 +17,7 @@
 | 1 3 | You deploy APIs to an API gateway. | ☐ | API Management |  |
 | 1 4 | API clients authenticate using OAuth and OIDC. | ☐ | Authentication and Authorisation |  |
 | 1 5 | You apply the correct restrictions on data usage. | ☐ | Restrictions on Data Use |  |
-| * * N o . * * | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
+| ** N o . ** | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
 | 1 6 | APIs implement *ping* and service status endpoints. | ☐ | Ping and Service Status |  |
 | 1 7 | You follow our deprecation and retirement policies. | ☐ | Deployment |  |
 | 1 8 | API use semantic versioning. | ☐ | Versioning |  |
@@ -28,6 +28,4 @@
 | 2 3 | Test reports include security testing and code coverage metrics. | ☐ |  |  |
 | 2 4 | You follow our documentation recommendations. | ☐ | Documentation |  |
 
-[^1]: Note Synthetic data should be useful and reflect the use-case of
     the API
-

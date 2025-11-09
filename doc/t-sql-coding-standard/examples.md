@@ -4,9 +4,9 @@
 
 In this example we make sure to
 
--   Qualify table names with the schema name.
+- Qualify table names with the schema name.
 
--   Specify INSERT columns.
+- Specify INSERT columns.
 
 !!! note "> >"
     [INSERT INTO SubscribingConsultant] > [VALUES (\'7A5\', \'C1234567\');]
@@ -17,11 +17,11 @@ In this example we make sure to
 
 In this example we make sure to
 
--   Qualify table names with the schema name.
+- Qualify table names with the schema name.
 
--   Add a meaningful table alias name.
+- Add a meaningful table alias name.
 
--   Use the field name in the ORDER BY clause rather than a constant.
+- Use the field name in the ORDER BY clause rather than a constant.
 
 !!! note "> >"
     [SELECT Report.Id, Report.SubjectGivenName AS FirstName, Report.SubjectFamilyName AS LastName] > [FROM Report] > [ORDER BY 1 ASC;]
@@ -32,19 +32,19 @@ In this example we make sure to
 
 In this next example, we will step through a query making sure to: -
 
-1.  Expand wildcards searches.
+1. Expand wildcards searches.
 
-2.  Qualify table names with the schema name.
+2. Qualify table names with the schema name.
 
-3.  Add a meaningful table alias name.
+3. Add a meaningful table alias name.
 
-4.  Qualify column names with table alias.
+4. Qualify column names with table alias.
 
-5.  Add a meaningful column alias name[^15].
+5. Add a meaningful column alias name[^15].
 
-6.  Alias the column name using the AS convention.
+6. Alias the column name using the AS convention.
 
-7.  Add the semi colon terminator.
+7. Add the semi colon terminator.
 
 |  | >  | > [SELECT \* FROM Report] |
 | --- | --- | --- |
@@ -70,9 +70,9 @@ index.
 
 We step through the next example ensuring to
 
-1.  Eliminate the DATEDIFF operator.
+1. Eliminate the DATEDIFF operator.
 
-2.  Eliminate arithmetic operators against date fields.
+2. Eliminate arithmetic operators against date fields.
 
 |  | > | > [SELECT ObservationRequest.ReportId] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE > DATEDIFF(DAY,Observ ationRequest.AuthorisedDateTime,GETDATE())\<=30;] |
 | --- | --- | --- |
@@ -84,13 +84,13 @@ We step through the next example ensuring to
 In this next example, we will step through a stored procedure making
 sure to:
 
-1.  Qualify the procedure name with the schema.
+1. Qualify the procedure name with the schema.
 
-2.  Add BEGIN and END statements.
+2. Add BEGIN and END statements.
 
-3.  SET NOCOUNT ON
+3. SET NOCOUNT ON
 
-4.  Return a value.
+4. Return a value.
 
 |  |  | [CREATE PROCEDURE prGetReportMasterId \@Id BIGINT] [AS] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] |
 | --- | --- | --- |
@@ -104,15 +104,15 @@ sure to:
 In the following example, we will step through a stored procedure making
 sure to:
 
-1.  Specify length for VARCHAR parameters.
+1. Specify length for VARCHAR parameters.
 
-2.  Specify columns for INSERT statements.
+2. Specify columns for INSERT statements.
 
-3.  SET NOCOUNT ON, SET XACT_ABORT ON
+3. SET NOCOUNT ON, SET XACT_ABORT ON
 
-4.  Add implicit transaction using BEGIN TRANSACTION and COMMIT
+4. Add implicit transaction using BEGIN TRANSACTION and COMMIT
 
-5.  Add Error Handling using TRY . . . CATCH blocks.
+5. Add Error Handling using TRY . . . CATCH blocks.
 
 !!! note ">"
     [CREATE PROCEDURE dbo.InsertReferenceDataValue] > [\@ReferenceDataDomainId INT] > [, \@Code VARCHAR] > [, \@Rubric VARCHAR] > [, \@Active BIT] > [, \@ParentId INT = NULL] > [AS] > [BEGIN] > [INSERT dbo.ReferenceDataValue] > [VALUES] > [(] > [\@ReferenceDataDomainId] > [ , \@Code] > [ , \@Rubric] > [ , GETDATE()] > [ , \@Active] > [ , \@ParentId] > [);] > [RETURN 0;] > [END;]
@@ -133,22 +133,22 @@ schema.
 
 The conformant query implements the following rules: -
 
--   Names are descriptive and singular.
+- Names are descriptive and singular.
 
--   Pascal Casing applied.
+- Pascal Casing applied.
 
--   Prefixes and underscores removed.
+- Prefixes and underscores removed.
 
--   All Keywords are uppercase.
+- All Keywords are uppercase.
 
--   Meaningful table alias name applied.
+- Meaningful table alias name applied.
 
--   Columns qualified with Table alias and meaningful column alias
+- Columns qualified with Table alias and meaningful column alias
     applied.
 
--   Meaningful column alias and name applied.
+- Meaningful column alias and name applied.
 
--   SQL Prompt formatting style rule applied.
+- SQL Prompt formatting style rule applied.
 
 | > 1 | >  | > SELECT SubjectGivenName, SubjectFamilyName, \[Hospital > Ward\] from tblPatients WHERE ID = \@int_ID and > SubjectGivenName = \@str_param2; |
 | --- | --- | --- |

@@ -14,7 +14,7 @@ predictable & hierarchical.
 | ?\[*Query parameters*\] | Used to filter and modify requests. Refer to the [Query Parameters](naming.md) section for reserved names. |
 
 !!! example "Examples of good practice"
-    *https://api.test.wales.nhs.uk/appointmentsService/patients?sort=firstName *
+    *<https://api.test.wales.nhs.uk/appointmentsService/patients?sort=firstName>*
 
     *https://api.test.wales.nhs.uk/appointmentsService/patients/{id}/conditions *
 
@@ -26,4 +26,3 @@ predictable & hierarchical.
 
 !!! tip "Practical tips"
     Further examples in this document shorten the full URL structure for brevity.
-

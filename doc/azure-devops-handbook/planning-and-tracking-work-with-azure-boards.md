@@ -39,9 +39,9 @@ automatic release notes generation. The following conventions are
 
 Capture requirements in User Stories. When doing so:
 
--   Provide a concise description from the user's perspective.
+- Provide a concise description from the user's perspective.
 
--   Include clear acceptance criteria using Gherkin syntax to define
+- Include clear acceptance criteria using Gherkin syntax to define
     'done.'
 
   --------------------------------------------------------------------------------------------------------------------------------
@@ -117,4 +117,3 @@ to Builds](automating-builds-and-deployments-with-azure-pipelines.md) for more d
 ## Track progress of builds and releases
 
 Add status badges to a repos' README file to indicate code stability.
-

@@ -199,4 +199,3 @@ When using Elasticsearch, Lucene, or equivalent search products, the
 server **SHOULD** align with the syntax of the chosen product.
 Alternatively, consider using well-documented, standardised mechanisms
 such as OData filter syntax or a GraphQL service.
-

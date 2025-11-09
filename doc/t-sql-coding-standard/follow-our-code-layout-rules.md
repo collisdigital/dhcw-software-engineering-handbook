@@ -23,4 +23,3 @@ standard SQL Prompt config files.**
     [The Redgate Guide to SQL Server Team-based Development \| Redgate (red-gate.com)](https://www.red-gate.com/library/the-redgate-guide-to-sql-server-team-based-development)
 
     [Using multiple custom SQL formatting styles in SQL Prompt (red-gate .com)](https://www.red-gate.com/hub/product-learning/sql-prompt/using-multiple-custom-sql-formatting-styles-in-sql-prompt)
-

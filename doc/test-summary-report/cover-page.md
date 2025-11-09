@@ -2,15 +2,15 @@
 
 The report's cover page **MUST** contain the following elements: -
 
-## Heading #1: "*digital health and care wales*".
+## Heading #1: "*digital health and care wales*"
 
 ## Heading #2: name and version of the system under test
 
 You **SHOULD** include: -
 
--   The acronym (in parentheses) if you intend to use it in the report.
+- The acronym (in parentheses) if you intend to use it in the report.
 
--   The version number, if applicable, prefixed with a 'v' for version
+- The version number, if applicable, prefixed with a 'v' for version
     or 'b' for build number.
 
 ## Heading #3: name of module or component
@@ -51,4 +51,3 @@ footer and choose 'Update Field' to update the [filename](filename.md).
 
 **\
 **
-

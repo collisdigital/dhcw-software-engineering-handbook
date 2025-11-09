@@ -14,6 +14,5 @@ The Testing summary **MUST** contain the following headings: -
 | **Dates:** | Specify the duration of the testing period and key milestones. |
 | **Test Tools:** | The tools used for testing purposes. |
 | **In-Scope:** | The features, components and interfaces considered during testing. |
-| * *Out-of-scope:** | What was explicitly excluded from the testing scope. |
+| **Out-of-scope:** | What was explicitly excluded from the testing scope. |
 | **Exit criteria:** | The predetermined conditions that must be met for testing to be considered complete and successful. |
-

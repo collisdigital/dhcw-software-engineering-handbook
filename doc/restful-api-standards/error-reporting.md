@@ -27,4 +27,3 @@ server **SHOULD** return a 4xx status code.
     [RFC 7807 - Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
 
     [JSON:API --- A specification for building APIs in JSON](https://jsonapi.org/)
-
