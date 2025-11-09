@@ -12,4 +12,3 @@
     Links to further guides, information and work instructions.
 
     If a hyperlink is missing, search for the document in the Document Management System.
-

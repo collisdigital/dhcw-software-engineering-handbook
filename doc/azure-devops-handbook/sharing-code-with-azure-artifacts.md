@@ -19,19 +19,19 @@ these practices when using Artifacts in your Azure DevOps workflows.
 
 ## Consuming packages
 
--   **Avoid Public Feeds**: Do not pull packages from public sources
+- **Avoid Public Feeds**: Do not pull packages from public sources
     like nuget.org. Use a secondary feed, *DHCW_Global_Dependencies*,
     for shared or third-party dependencies.
 
--   **Minimise Duplication**: If a package is already in the
+- **Minimise Duplication**: If a package is already in the
     organisation feed, do not duplicate it in your local feed. This
     saves storage costs and reduces redundancy.
 
--   **Keep Dependencies Updated**: Regularly check the
+- **Keep Dependencies Updated**: Regularly check the
     *DHCW_Global_Dependencies* feed for updates to keep your
     dependencies current.
 
--   **Request Access Permissions**: If you need access to the
+- **Request Access Permissions**: If you need access to the
     organisation feed, ask the organisation owner to grant the Build
     Service User \'Contributor\' permissions. The Build Service User is
     the account running your Azure pipeline.
@@ -50,9 +50,9 @@ these practices when using Artifacts in your Azure DevOps workflows.
 
 Publishing packages to Azure Artifacts helps in:
 
--   Sharing secure, maintainable libraries (such as UI components).
+- Sharing secure, maintainable libraries (such as UI components).
 
--   Distributing validated third-party libraries without pulling from
+- Distributing validated third-party libraries without pulling from
     > public feeds.
 
 !!! info "Further reading and information"
@@ -120,16 +120,15 @@ simplifies package management.
 
 Follow these rules When publishing to a shared feed**:**
 
-1.  **No Pre-releases:** Packages with pre-release tags (e.g., -alpha,
+1. **No Pre-releases:** Packages with pre-release tags (e.g., -alpha,
     > -beta, -rc) **MUST NOT** be published to a shared feed. Use
     > separate feeds for testing.
 
-2.  **Stable Versions Only:** Ensure packages are fully tested,
+2. **Stable Versions Only:** Ensure packages are fully tested,
     > reviewed, and stable before publishing.
 
-3.  **Follow Conventions:** Adhere to semantic versioning (e.g., 1.0.0
+3. **Follow Conventions:** Adhere to semantic versioning (e.g., 1.0.0
     > for stable releases).
 
 !!! tip "Practical tips"
     Automate checks in pipelines to block unstable versions from being published to the shared feed.
-

@@ -10,4 +10,3 @@ easy to use, safe and secure.
 
 !!! info "Further reading and information"
     [wardle/concierge: README \> Background](https://github.com/wardle/concierge#readme)
-

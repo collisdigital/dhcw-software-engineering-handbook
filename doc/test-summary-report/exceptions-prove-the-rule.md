@@ -12,4 +12,3 @@ changes **SHOULD NOT** be made casually.
 
 [^2]: WIA-SOP-71 Wales Informatics Assurance GROUP (WIAG) Process,
     section 2 Scope.
-

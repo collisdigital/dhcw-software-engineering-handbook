@@ -6,4 +6,3 @@ to date.
 
 !!! tip "Practical tips"
     Set your time zone to ***(UTC+00:00) Dublin, Edinburgh, Lisbon, London*** in *User Settings \> Time and Locale* to ensure consistency.
-

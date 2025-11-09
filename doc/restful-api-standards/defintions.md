@@ -18,4 +18,3 @@
 | Proxy | Middleware enhancing security, analytics, and API management, acting as a gateway to backend APIs. |
 | Resource(s) / resource model(s) | Data fields representing objects, accessible via unique URLs or endpoints, forming the API\'s core. |
 | Service / System | A system exposing one or more API endpoints. Sometimes used interchangeably with Namespace. |
-

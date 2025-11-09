@@ -19,10 +19,10 @@ without requiring prior knowledge of specific URIs.
 However, *HATEOAS* is NOT required for APIs in this organisation**.**
 But if implemented:
 
--   The API **MUST** provide hypermedia links to guide clients on
+- The API **MUST** provide hypermedia links to guide clients on
     available actions.
 
--   These links **SHOULD** use standard link relations where possible
+- These links **SHOULD** use standard link relations where possible
     (e.g. as defined in RFC 8288) and **MUST** be documented in the
     API's OpenAPI definition.
 
@@ -34,16 +34,16 @@ But if implemented:
 APIs **MUST** use standard HTTP methods correctly to ensure predictable
 behaviour.
 
--   APIs **MUST** only expose necessary HTTP methods and **MUST**
+- APIs **MUST** only expose necessary HTTP methods and **MUST**
     document them in the [OpenAPI definition](documentation.md).
 
--   APIs **SHOULD** return 405 Method Not Allowed for unsupported HTTP
+- APIs **SHOULD** return 405 Method Not Allowed for unsupported HTTP
     methods instead of silently ignoring them.
 
--   APIs **MUST** adhere to the standard HTTP semantics defined in *RFC
+- APIs **MUST** adhere to the standard HTTP semantics defined in *RFC
     9110,* including idempotency rules.
 
--   Non-standard HTTP verbs **MUST NOT** be used.
+- Non-standard HTTP verbs **MUST NOT** be used.
 
 !!! info "Further reading and information"
     [RFC 9110: HTTP Semantics - Status Codes (rfc-editor.org)](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes)
@@ -61,13 +61,13 @@ behaviour.
 | **RETRIEVE HEADERS** | HEAD | /resources/*{id}* | None | None | ✅Yes |
 | **QUERY CAPABILITIES** | OPTIONS | /resources | None | Allowed Methods | ✅Yes |
 
--   GET, HEAD, OPTIONS, and DELETE **MUST NOT** modify resources.
+- GET, HEAD, OPTIONS, and DELETE **MUST NOT** modify resources.
 
--   PUT and DELETE **MUST** be idempotent to ensure safe retries.
+- PUT and DELETE **MUST** be idempotent to ensure safe retries.
 
--   PATCH is NOT idempotent unless explicitly designed to be.
+- PATCH is NOT idempotent unless explicitly designed to be.
 
--   POST **MUST** be used for non-idempotent operations such as resource
+- POST **MUST** be used for non-idempotent operations such as resource
     creation.
 
 ## HTTP request headers
@@ -147,11 +147,11 @@ The server **MUST** return the correct HTTP status code for each API
 operation, as per RFC 9110. The table below lists common status codes,
 but others **MAY** be used if needed.
 
--   Yes" means the status code applies to that operation.
+- Yes" means the status code applies to that operation.
 
--   An empty cell means the code is not usually used for that operation.
+- An empty cell means the code is not usually used for that operation.
 
-| **HTTP STATUS CODE** | ** GET** * *(COL LECTI ON)** | ** GET** **(R ESOUR CE)** | **P OST** * *(COL LECTI ON)** | ** PUT** **(R ESOUR CE)** | **PA TCH** **(R ESOUR CE)** | **DEL ETE** **(R ESOUR CE)** |
+| **HTTP STATUS CODE** | **GET** **(COL LECTI ON)** | **GET** **(R ESOUR CE)** | **P OST** **(COL LECTI ON)** | **PUT** **(R ESOUR CE)** | **PA TCH** **(R ESOUR CE)** | **DEL ETE** **(R ESOUR CE)** |
 | --- | --- | --- | --- | --- | --- | --- |
 | 200 OK | ✅Yes | ✅Yes |  | ✅Yes | S | ee ca veats below |  |
 | 201 CREATED |  |  | ✅Yes |  |  |  |
@@ -177,32 +177,33 @@ but others **MAY** be used if needed.
 
 **Caveats and edge cases**
 
--   While PATCH can return 200 OK with the updated resource, 202
+- While PATCH can return 200 OK with the updated resource, 202
     ACCEPTED is preferred for asynchronous processing. But some
     implementations **MAY** choose to return 200 OK instead.
 
--   304 NOT MODIFIED applies only when the API supports caching with
+- 304 NOT MODIFIED applies only when the API supports caching with
     conditional GET requests. The server **MAY** return 304 NOT MODIFIED
     if the client's cached version is still valid.
 
 ```{=html}
 <!-- -->
 ```
--   Use 409 CONFLICT when there\'s a conflict with the current state of
+
+- Use 409 CONFLICT when there\'s a conflict with the current state of
     the target resource. Use 422 UNPROCESSABLE ENTITY when the server
     understands the request but can\'t process it due to semantic
     errors.
 
--   Use 409 CONFLICT when there\'s a conflict with the current state of
+- Use 409 CONFLICT when there\'s a conflict with the current state of
     the target resource. Use 422 UNPROCESSABLE ENTITY when the server
     understands the request but can\'t process it due to semantic
     errors.
 
--   While 415 UNSUPPORTED MEDIA TYPE is typically used for POST, PUT and
+- While 415 UNSUPPORTED MEDIA TYPE is typically used for POST, PUT and
     PATCH, it **MAY** apply to GET if a body is sent with an unsupported
     media type --- although this is rare.
 
--   412 PRECONDITION FAILED and 428 PRECONDITIONS **REQUIRED** are typically
+- 412 PRECONDITION FAILED and 428 PRECONDITIONS **REQUIRED** are typically
     used for POST, PUT and PATCH. However, some designs **MAY** also
     apply them to DETETE if preconditions are enforced.
 
@@ -211,12 +212,11 @@ but others **MAY** be used if needed.
 > 412 PRECONDITION FAILED when a precondition specified in the request
 > isn\'t met.
 
--   Typically our API platform will apply rate limiting and return 429
+- Typically our API platform will apply rate limiting and return 429
     TOO MANY REQUESTS when appropriate.
 
--   Some designs **MAY** extend the use of 501 NOT IMPLEMENTED to other
+- Some designs **MAY** extend the use of 501 NOT IMPLEMENTED to other
     methods if a particular method is not supported by the server.
 
 !!! info "Further reading and information"
     [RFC 9110: HTTP Semantics - Status Codes (rfc-editor.org)](https://www.rfc-editor.org/rfc/rfc9110.html#name-status-codes)
-

@@ -13,4 +13,3 @@ the template.
 
 !!! tip "Practical tips"
     SDS-TEM-5 replaces the previous Test Summary Report and Test Certificate templates. The Test Certificate has been retired with this guide\'s publication, and Test Certificates **SHOULD** no longer be produced.
-

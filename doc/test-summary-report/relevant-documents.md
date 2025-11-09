@@ -7,4 +7,3 @@ Quality Plan and Safety Case and Readiness Report where they exist. You
 
 !!! tip "Practical tips"
     Use external links cautiously as they may become outdated or broken over time.
-

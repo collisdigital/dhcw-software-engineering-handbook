@@ -25,4 +25,3 @@ Assurance Process.
     [Shift testing left with unit tests - Azure DevOps \| Microsoft Learn](https://learn.microsoft.com/en-gb/devops/develop/shift-left-make-testing-fast-reliable)
 
     [Introducing the Software Testing Cupcake (Anti-Pattern) \| Thoughtworks](https://www.thoughtworks.com/en-gb/insights/blog/introducing-software-testing-cupcake-anti-pattern)
-

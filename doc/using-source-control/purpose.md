@@ -6,4 +6,3 @@ development handbook.
 
 !!! info "Further reading and information"
     SDS-GDN-1 Software development handbook
-

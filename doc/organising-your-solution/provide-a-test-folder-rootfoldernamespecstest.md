@@ -9,17 +9,17 @@ Names **SHOULD** correspond to those of your dependency layers, with the
 
 When writing the tests, you **SHOULD:-**
 
--   Prioritise output testing over testing that assures modules.
+- Prioritise output testing over testing that assures modules.
 
--   Adopt Behavioural Driven Development as your approach.
+- Adopt Behavioural Driven Development as your approach.
 
--   Balance the benefits and drawbacks of adding extensive testing to
+- Balance the benefits and drawbacks of adding extensive testing to
     your solution.
 
--   Consider You Aren't Gonna Need It (YAGNI) rules when deciding what
+- Consider You Aren't Gonna Need It (YAGNI) rules when deciding what
     to test.
 
--   Consider the testing requirements described in your Definition of
+- Consider the testing requirements described in your Definition of
     Done (DOD).
 
 Consider wider assurance needs when deciding what tests to write. Integration and smoke tests often provide the greatest benefit Consider You Aren't Gonna Need It (YAGNI) and carefully balance the time and effort of an extensive testing approach with the benefit it provides

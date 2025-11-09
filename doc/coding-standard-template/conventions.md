@@ -15,4 +15,3 @@ this document are to be interpreted as described in [RFC
 
 !!! info "Further reading and information"
     Links to further guides, information and work instructions
-

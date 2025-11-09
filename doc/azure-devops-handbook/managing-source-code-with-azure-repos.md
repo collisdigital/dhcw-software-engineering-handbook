@@ -13,16 +13,16 @@ You have freedom to choose your branching and release strategies, but
 you **SHOULD** follow these key practices to maintain simplicity and
 consistency:
 
--   **Use feature branches**: Develop new features and fix bugs in
+- **Use feature branches**: Develop new features and fix bugs in
     > dedicated branches.
 
--   **Merge through pull requests (PRs)**: Integrate changes into the
+- **Merge through pull requests (PRs)**: Integrate changes into the
     > main branch using PRs.
 
--   **Keep the main branch clean**: Ensure the main branch is functional
+- **Keep the main branch clean**: Ensure the main branch is functional
     > & up to date.
 
--   **Git Tagging:** Tag the release commit to ensure traceability and
+- **Git Tagging:** Tag the release commit to ensure traceability and
     > version identification.
 
 ## Recommended naming conventions
@@ -56,16 +56,16 @@ depends on your strategy.
 
 You **SHOULD** ensure these settings are applied across all branches:
 
--   **Enable Commit Mention Linking:** Automatically link commits to
+- **Enable Commit Mention Linking:** Automatically link commits to
     work items by including the work item ID (e.g., #123) in the commit
     message.
 
--   **Ensure Work Item Resolution:** Automatically update work item
+- **Ensure Work Item Resolution:** Automatically update work item
     status based on commit actions.
 
 ## Configure repository policies for email validation
 
--   **Commit author email validation**: Block pushes from emails not
+- **Commit author email validation**: Block pushes from emails not
     matching .\*@wales\\.nhs\\.uk\$
 
 ## Configure branch policies
@@ -73,33 +73,34 @@ You **SHOULD** ensure these settings are applied across all branches:
 Enable these settings on main and release branches to support effective
 branching and release:
 
--   **Require a minimum number of reviewers:** Ensure pull requests are
+- **Require a minimum number of reviewers:** Ensure pull requests are
     subject to code review.
 
--   **Require linked work items:** Ensure pull requests are linked to
+- **Require linked work items:** Ensure pull requests are linked to
     work items.
 
--   **Require comments resolution:** Address comments before merging
+- **Require comments resolution:** Address comments before merging
     pull requests.
 
 ```{=html}
 <!-- -->
 ```
--   **Enable Build Validation**: Trigger a build pipeline on pull
+
+- **Enable Build Validation**: Trigger a build pipeline on pull
     requests to validate code quality.
 
--   **Add a Code Coverage Status Check:** Ensure coverage targets are
+- **Add a Code Coverage Status Check:** Ensure coverage targets are
     met before merging.
 
--   **Set Coverage Thresholds:** Define differential (diff) thresholds
+- **Set Coverage Thresholds:** Define differential (diff) thresholds
     in *azurepipelines-coverage.yml* or *.runsettings* to match your
     *Definition of Done*.
 
--   **Address Insufficient Coverage:** Use the \"*Require comments
+- **Address Insufficient Coverage:** Use the \"*Require comments
     resolution*\" policy to address any insufficient coverage before
     merging.
 
--   **Review Coverage Thresholds**: Regularly review thresholds to meet
+- **Review Coverage Thresholds**: Regularly review thresholds to meet
     quality standards.
 
 !!! tip "Practical tips"
@@ -114,4 +115,3 @@ branching and release:
 
 !!! info "Further reading and information"
     [Set Git repository settings - Azure Repos \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/repos/git/repository-settings?view=azure-devops&tabs=browser)
-

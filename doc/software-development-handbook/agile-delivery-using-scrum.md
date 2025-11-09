@@ -97,7 +97,7 @@ execution:
 !!! note "**Boards**"
     **Kanban boards:** Visualise and manage requirements across all stages, independent of sprint cycles. > **Task Boards**: Track the status of tasks and their progress during sprints.
 
-!!! note "* *Dashboard**"
+!!! note "**Dashboard**"
     Create customised dashboards to track key metrics such as test results, build quality, code coverage, and sprint burndown. This helps you monitor overall project health and progress.
 
 !!! info "Further reading and information"
@@ -108,4 +108,3 @@ execution:
     [Implement Scrum work practices in Azure Boards - Azure Boards \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/boards/sprints/scrum-overview?view=azure-devops)
 
     [Best practices for Agile project management - Azure Boards \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/boards/best-practices-agile-project-management?view=tfs-2018&tabs=agile-process)
-

@@ -25,19 +25,18 @@ Follow these steps to request *GitHub Copilot Business*, an AI-powered
 coding assistant for your development environment. *Note***:** You'll
 also need a *GitHub Enterprise* subscription.
 
-1.  First, check if you already have GitHub Enterprise**.** *VS
+1. First, check if you already have GitHub Enterprise**.** *VS
     Enterprise* and *VS Professional* include it by default, but *VS
     Test Professional* does not.
 
-2.  It's often worth having a *VS Professional* subscription anyway.
+2. It's often worth having a *VS Professional* subscription anyway.
     Raise a service request to the **Corporate Applications team**,
     addressed to the Software Development Manager. They will allocate
     the subscription and forward your request for *GitHub CoPilot
     Business*.
 
-3.  If you don't need a *VS Professional* subscription, raise a service
+3. If you don't need a *VS Professional* subscription, raise a service
     request to the **GitHub GIG CYMRU** **team**. They'll allocate
     *GitHub Copilot Business (*and *GitHub Enterprise* if needed).
     *Note***:** You may need to provide extra information, such as a
     cost code.[]
-

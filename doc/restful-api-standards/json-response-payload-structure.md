@@ -460,4 +460,3 @@ Example response
 
 !!! info "Further reading and information"
     [RFC 7807 - Problem Details for HTTP APIs](https://datatracker.ietf.org/doc/html/rfc7807)
-

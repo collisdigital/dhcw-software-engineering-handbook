@@ -36,13 +36,13 @@ described in this document.
 You **SHOULD** Inspect the API contract for the following, adding these
 checks to your CI/CD pipeline.
 
--   Endpoints are named correctly.
+- Endpoints are named correctly.
 
--   Resources and their types are accurate.
+- Resources and their types are accurate.
 
--   Relationships between resources are properly defined.
+- Relationships between resources are properly defined.
 
--   No functionality is missing or duplicated.
+- No functionality is missing or duplicated.
 
 !!! info "Further reading and information"
     [API linting with Spectral \| What is it and how does it work?](https://blog.axway.com/learning-center/apis/api-design/api-linting-with-spectral#:~:text=Spectral%20allows%20automating%20some%20of,APIs%20follow%20the%20given%20rules.)
@@ -59,13 +59,13 @@ coverage metrics in a [Test Summary report](testing.md).
 
 Functional tests **SHOULD** verify that:
 
--   The correct HTTP headers and [HTTP status
+- The correct HTTP headers and [HTTP status
     codes](http-implementation.md) are returned.
 
--   The media type and its payload are correct, with appropriate field
+- The media type and its payload are correct, with appropriate field
     names, types and values.
 
--   Endpoints behave according to the specified business logic and
+- Endpoints behave according to the specified business logic and
     requirements.
 
 ### Test for failure
@@ -99,14 +99,14 @@ test the backend API for common vulnerabilities.
 Refer to the [Security](security-headers.md) section when planning your
 tests. Examples of common security tests include:
 
--   Input validation tests to prevent SQL injection attacks.
+- Input validation tests to prevent SQL injection attacks.
 
--   Verifying that only authorised users can access patient data.
+- Verifying that only authorised users can access patient data.
 
--   Data encryption checks to confirm that data is transmitted over
+- Data encryption checks to confirm that data is transmitted over
     HTTPS.
 
--   Rate limiting tests to detect and mitigate potential brute-force
+- Rate limiting tests to detect and mitigate potential brute-force
     attacks.
 
 ## Performance tests
@@ -163,4 +163,3 @@ headings.
 
 You **SHOULD** deploy APIs to a sandbox environment to allow client
 testing. Contact the platform team for further assistance.
-

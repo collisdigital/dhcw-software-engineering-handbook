@@ -4,14 +4,14 @@
 
 ### How to import the settings
 
-1.  Download the *NWIS_STANDARD_SQLPROMPT_SETTINGS* file to a local
+1. Download the *NWIS_STANDARD_SQLPROMPT_SETTINGS* file to a local
     directory.
 
 > You can find the file from the *Software Development Standards* git
 > repo under the *Software Development Standards* project on Application
 > Development & Support's Azure DevOps instance.
 
-2.  Open SQL Server Management Studio with Redgate SQL Prompt v9 or
+1. Open SQL Server Management Studio with Redgate SQL Prompt v9 or
     later installed and choose ***SQL Prompt*\>*Options.***
 
 > Select ***Import*** to load the
@@ -41,30 +41,30 @@
 
 ### How to import the style
 
-1.  Download the *NWIS_STANDARD_SQLPROMPT_SETTINGS* file to a local
+1. Download the *NWIS_STANDARD_SQLPROMPT_SETTINGS* file to a local
     directory.
 
 > You can find the file from the *Software Development Standards* git
 > repo under the *Software Development Standards* project on Application
 > Development & Support's Azure DevOps instance.
 
-2.  You have a choice of two versions. If using SQL Prompt v10.5 or
+1. You have a choice of two versions. If using SQL Prompt v10.5 or
     later, choose the newer *.json* file extension. If using an earlier
     version, choose the *.sqlpromptstylev2* file type.
 
-3.  With the correct style file selected, save it to "*\<Insert Drive
+1. With the correct style file selected, save it to "*\<Insert Drive
     Letter\>*:\\*Users*\\*\<Insert Test-Dev-NADEX-ID\>*
     *AppData\\Local\\Red Gate\\SQL Prompt \<Version\>\\StylesV2" or*
     "*\<Insert Drive Letter\>*:\\*Users*\\*\<Insert Test-Dev-NADEX-ID\>*
     *AppData\\Local\\Red Gate\\SQL Prompt \<Version\>\\Styles* [^16]
 
-4.  Open SQL Server Management Studio with Redgate SQL Prompt v9 or
+1. Open SQL Server Management Studio with Redgate SQL Prompt v9 or
     later installed.
 
-5.  From the menu choose ***SQL Prompt*\>*Active Styles\>Edit Formatting
+1. From the menu choose ***SQL Prompt*\>*Active Styles\>Edit Formatting
     Styles***
 
-6.  Under ***Your styles*** (top right), select the vertical ellipsis
+1. Under ***Your styles*** (top right), select the vertical ellipsis
     next to ***NWIS_Custom style indented, commas before*** and choose
     ***Set as active.***
 
@@ -85,13 +85,12 @@ following customisations applied: -
 
 Commas before: -
 
--   clearly define a new column.
+- clearly define a new column.
 
--   help identify when a comma is missing.
+- help identify when a comma is missing.
 
--   make it easier to comment out additional fields during development.
+- make it easier to comment out additional fields during development.
 
 Indentation aids readability. However, long expressions may appear
 distorted when wrapped. See the section [Exceptions prove the
 rule](exceptions-prove-the-rule.md).
-

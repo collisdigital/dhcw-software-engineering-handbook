@@ -2,12 +2,12 @@
 
 Committing code early and often provides several benefits:
 
--   It reduces the risk of losing code, e.g., due to local disk failure.
+- It reduces the risk of losing code, e.g., due to local disk failure.
 
--   It encourages building smaller, modular components, simplifying
+- It encourages building smaller, modular components, simplifying
     rollback.
 
--   It makes integrating changes into the main or master branch easier.
+- It makes integrating changes into the main or master branch easier.
 
 You **MUST** commit changes to your main codebase as soon as possible,
 regardless of whether you are using [trunk-based
@@ -20,4 +20,3 @@ disruptions.
 
 You **SHOULD NOT** commit large batches of unrelated work. It
 complicates code reviews and rollbacks.
-

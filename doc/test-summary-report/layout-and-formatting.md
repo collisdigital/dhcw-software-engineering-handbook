@@ -9,4 +9,3 @@ remove the footer image to ensure the text is clearly visible.
 
 You **SHOULD** strive to ensure the report displays well in Microsoft
 Word on desktop and online.
-

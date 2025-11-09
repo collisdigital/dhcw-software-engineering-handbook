@@ -2,9 +2,9 @@
 
 These standards:
 
--   Specify the requirements for designing and building RESTful APIs.
+- Specify the requirements for designing and building RESTful APIs.
 
--   Provide guidance for aligning with our API Strategy & Roadmap.
+- Provide guidance for aligning with our API Strategy & Roadmap.
 
 They are intended for API producers but may also assist teams
 integrating APIs into client applications.
@@ -14,4 +14,3 @@ integrating APIs into client applications.
 
 !!! info "Further reading and information"
     The API Strategy & Roadmap
-

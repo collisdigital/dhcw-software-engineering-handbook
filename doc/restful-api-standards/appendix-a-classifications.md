@@ -64,14 +64,13 @@ only *licenced* for use in reading patient test results.
 
 ## Lifecycle status
 
-| * *STATUS** | **DEFINITION** | **RELEASE VERSION** |
+| **STATUS** | **DEFINITION** | **RELEASE VERSION** |
 | --- | --- | --- |
 | **Alpha** | Pre-release version and subject to *breaking changes*. Intended to be used only by those involved with the development. ***SHOULD** not be available in a production environment.* | No |
 | **Beta** | Pre-release version and subject to *breaking changes*. Stable enough for use by early adopters to help you identify bugs and potential improvements. ***MAY** be available in a production environment.* | No |
-| * *Stable** | Release version. You **MUST NOT** introduce breaking changes. Breaking changes **MUST** result in a new major version. ***SHOULD** be available in a production environment.* | Yes |
-| * *Legacy** | The same as *stable*, available for use but no new integrations given it's planned for *deprecation.* ***SHOULD** be available in a production environment for existing users.* | Yes |
+| **Stable** | Release version. You **MUST NOT** introduce breaking changes. Breaking changes **MUST** result in a new major version. ***SHOULD** be available in a production environment.* | Yes |
+| **Legacy** | The same as *stable*, available for use but no new integrations given it's planned for *deprecation.* ***SHOULD** be available in a production environment for existing users.* | Yes |
 | **Dep recated** | The same as *stable*, but existing users should switch to a newer version or alternative API*.* Not intended for new users, given it's planned for *retirement.* ***SHOULD** be available in a production environment until retirement.* | Yes |
-| ** Retired** | No longer supported. APIs move into this category when all users have moved to a newer version or no longer subscribe. ***MUST** not be available in any environments.* | No |
+| **Retired** | No longer supported. APIs move into this category when all users have moved to a newer version or no longer subscribe. ***MUST** not be available in any environments.* | No |
 
 ##
-

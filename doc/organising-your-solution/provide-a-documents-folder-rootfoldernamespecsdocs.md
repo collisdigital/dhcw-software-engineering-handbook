@@ -34,4 +34,3 @@ high quality documentation.
     [How to write plain English](https://www.plainenglish.co.uk/)
 
     [Writing checklist (sharepoint.com)](https://nhswales365.sharepoint.com/sites/DHC_ENG/SitePages/Writing-guidelines.aspx)
-

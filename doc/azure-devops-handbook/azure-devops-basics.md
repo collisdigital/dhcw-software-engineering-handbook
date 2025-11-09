@@ -31,5 +31,4 @@ to determine which role best suits your needs.
 | **Con tributor** | Daily users of Azure DevOps. Key tasks: - Cloning, pushing, and pulling code in repositories. - Creating and managing work items, tasks, and bugs. - Participating in sprints and board activities. - Triggering and monitoring CI/CD pipelines. |
 | **Project Admin istrator** | Administers specific projects. Key responsibilities: - Assigning user permissions and configuring project settings. - Setting up repositories, boards, and sprint iterations. - Creating and maintaining CI/CD pipelines and housekeeping tasks. |
 | **Project Collection Admin istrator** | Oversees multiple projects. Key tasks: - Managing shared resources like package feeds and deployment agents. - Setting up pipelines that span projects. |
-| **Or ganisation Owner** | Global administrator for the organisation. Responsibilities include: - Creating projects and configuring global policies. ```{=html} <!-- --> ``` - Managing billing, subscriptions and user accounts. |
-
+| **Or ganisation Owner** | Global administrator for the organisation. Responsibilities include: - Creating projects and configuring global policies. ```{=html} <!-- -->``` - Managing billing, subscriptions and user accounts. |

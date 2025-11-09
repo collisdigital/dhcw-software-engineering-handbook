@@ -21,4 +21,3 @@ suited to help you follow these standards.
     [Map TFVC actions to Git - Azure Repos \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/repos/git/mapping-my-tfvc-actions-to-git?tabs=command-line&view=azure-devops)
 
     [Change the Work Items page experience - Azure Boards \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/boards/work-items/set-work-item-experience-vs?view=azure-devops&viewFallbackFrom=azure-devops)
-

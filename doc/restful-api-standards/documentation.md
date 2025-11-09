@@ -13,13 +13,13 @@ well-structured API docs.
 
 You **SHOULD** follow DHCW's Writing checklist, ensuring that you:
 
--   Write short sentences.
+- Write short sentences.
 
--   Talk directly to your user by using 'you' and active verbs.
+- Talk directly to your user by using 'you' and active verbs.
 
--   Use the active voice and plain language.
+- Use the active voice and plain language.
 
--   Avoid using 'home-grown' terms that are not industry standard.
+- Avoid using 'home-grown' terms that are not industry standard.
 
 !!! info "Further reading and information"
     [DHCW Writing checklist](https://nhswales365.sharepoint.com/sites/DHCW-Intranet/SitePages/Writing-style-guide.aspx)
@@ -28,18 +28,18 @@ You **SHOULD** follow DHCW's Writing checklist, ensuring that you:
 
 You **SHOULD**:
 
--   Describe your API using the OpenAPI (OAS) definition, version 3. OAS
+- Describe your API using the OpenAPI (OAS) definition, version 3. OAS
     is a global standard for describing RESTful APIs in a human and
     machine-readable format.
 
--   Provide OpenAPI definitions in YAML, as described in the next
+- Provide OpenAPI definitions in YAML, as described in the next
     section.
 
--   Add a monitored email address to the info object of the OpenAPI
+- Add a monitored email address to the info object of the OpenAPI
     definition to allow consumers to contact you with issues or
     comments.
 
--   Include the full semantic version number in the info object of the
+- Include the full semantic version number in the info object of the
     OpenAPI definition.\
     Store your OpenAPI specification in source control and keep it up to
     date.
@@ -84,11 +84,11 @@ APIs can be added to the description. It contains the following fields:
 
 api.yml provides a brief overview of:
 
--   What your API does.
+- What your API does.
 
--   Whether your API is in the alpha, beta or in production.
+- Whether your API is in the alpha, beta or in production.
 
--   Who can use your API, and any restrictions on using it or its data.
+- Who can use your API, and any restrictions on using it or its data.
 
 | **FIELD** | **MAX CH ARACTERS** | **DESCRIPTION** |
 | --- | --- | --- |
@@ -107,7 +107,7 @@ descriptions in markdown so that the platform team can generate HTML
 documentation in the API [catalogue](api-management.md).
 
 You **SHOULD NOT** include the actual endpoint of your API server.
-Replace it with *https://private.url*.
+Replace it with *<https://private.url>*.
 
 You **MAY** include examples in the open-api.yml file.
 
@@ -172,18 +172,18 @@ help users with common integration tasks. Write them in the same style
 as the quickstart; however, these examples can be longer and more
 complex. Examples **SHOULD** have the following characteristics:
 
--   Begin with a front-loaded title that starts with a verb.
+- Begin with a front-loaded title that starts with a verb.
 
--   Focus on helping users complete one task.
+- Focus on helping users complete one task.
 
--   Tell users what they need to do, not how the system works.
+- Tell users what they need to do, not how the system works.
 
--   Use numbered steps for clarity.
+- Use numbered steps for clarity.
 
--   Include example code and descriptions for request parameters and
+- Include example code and descriptions for request parameters and
     response fields.
 
--   Provide links to any subsequent tasks the user needs to complete.
+- Provide links to any subsequent tasks the user needs to complete.
 
 !!! example "Examples of good practice"
     *'**Retrieve ValueSets resources of SNOMED concepts** -- using a FHIR API'*
@@ -236,4 +236,3 @@ thoroughly to ensure reliability.
 
 Standards provide valuable guidance, but there may be rare exceptions.
 Principal and Lead Software Developers have discretion in such cases.
-

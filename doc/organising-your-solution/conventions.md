@@ -18,4 +18,3 @@ this document are to be interpreted as described in [RFC
     Links to further guides, information and work instructions
 
     **Note** that all links to Microsoft Learn© may default to *Azure DevOps Services.* Use its version selector to tailor the website for *Azure DevOps Server.*
-

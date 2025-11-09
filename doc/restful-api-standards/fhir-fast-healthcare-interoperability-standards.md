@@ -10,4 +10,3 @@ directly to the [Security](security-headers.md) section.
 
 !!! info "Further reading and information"
     [Wales FHIR Implementation Guide](https://simplifier.net/guide/fhir-standards-wales-implementation-guide?version=1.0.0)
-

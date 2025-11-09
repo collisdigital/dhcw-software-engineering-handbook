@@ -16,4 +16,3 @@ justified.
 | Spectral Linter for VS Code Extension | API Specification and Linting |
 | OWASP ZAP Burp Suite Pro BrowserStack SonarQube (Cloud, Server IDE) GitHub Advanced Security for Azure DevOps Microsoft Security DevOps Azure DevOps extension | Security Testing and Quality Analysis |
 | Azure DevOps Docker Desktop Podman | DevOps and Containerisation |
-

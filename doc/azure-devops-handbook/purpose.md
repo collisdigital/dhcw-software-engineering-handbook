@@ -25,4 +25,3 @@ And for in-depth training use:
     [AZ-400: Implement CI with Azure Pipelines and GitHub Actions - Training \| Microsoft Learn](https://learn.microsoft.com/en-gb/training/paths/az-400-implement-ci-azure-pipelines-github-actions/)
 
     [How Microsoft develops with DevOps - Azure DevOps \| Microsoft Learn](https://learn.microsoft.com/en-gb/devops/develop/how-microsoft-develops-devops)
-

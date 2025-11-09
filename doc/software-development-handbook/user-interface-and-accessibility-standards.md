@@ -4,7 +4,7 @@ Software **SHOULD** be intuitive and accessible. Design decisions must
 prioritise safety and accessibility. Keep in mind the following
 principles:
 
-!!! note "** User-Centred Design**"
+!!! note "**User-Centred Design**"
     Engage end-users early and often to understand their needs. Design interfaces that align with their tasks.
 
 !!! note "**Acc essibility**"
@@ -21,4 +21,3 @@ principles:
     [Digital Health and Care Wales Brand](https://nhswales365.sharepoint.com/sites/DHCW_CORP_Graphics/SitePages/Home.aspx)
 
     [WCAG 2 Overview \| Web Accessibility Initiative (WAI) \| W3C](https://www.w3.org/WAI/standards-guidelines/wcag/)
-

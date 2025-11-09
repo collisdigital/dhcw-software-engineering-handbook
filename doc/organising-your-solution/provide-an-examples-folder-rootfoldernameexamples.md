@@ -9,14 +9,13 @@ its own sub-folder.
 
 When doing so you **SHOULD:**
 
--   Make sure examples work as expected.
+- Make sure examples work as expected.
 
--   Demonstrate typical use cases, capabilities and support queries.
+- Demonstrate typical use cases, capabilities and support queries.
 
--   Consider using automation for each example output.
+- Consider using automation for each example output.
 
 You **SHOULD NOT** let examples become stale and out-of-date.
 
 !!! example "Examples of good practice"
     Figure 4 An example.NET Solution with example
-

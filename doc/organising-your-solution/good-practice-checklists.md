@@ -24,4 +24,3 @@ standards and guides; Exceptions are noted where they may apply.
     FHIR.
 
 [^2]: .*exe, .ps1 .sql* and .*cmd* files for example.
-

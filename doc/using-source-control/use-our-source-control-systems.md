@@ -6,4 +6,3 @@ more details from our Azure DevOps handbook.
 
 !!! info "Further reading and information"
     SDS-CS-7 Azure DevOps handbook
-

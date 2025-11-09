@@ -40,4 +40,3 @@ access to the shared backlog.
 
 !!! info "Further reading and information"
     [Define area paths and assign to a team - Azure Boards \| Microsoft Learn](https://learn.microsoft.com/en-gb/azure/devops/organizations/settings/set-area-paths?view=azure-devops&tabs=browser)
-

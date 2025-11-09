@@ -17,4 +17,3 @@ better suits the needs of your project. Refer to the
     [OpenAPI & .NET: You\'re Doing It Wrong - Mark Rendle - NDC London 2023](https://www.youtube.com/watch?v=acGvHkl4uto)
 
     [C# ASP.NET 5 - Designing Web APIs with Swagger aka OpenAPI Specification](https://www.youtube.com/watch?v=l-6cNIVMk6Q)
-

@@ -2,41 +2,39 @@
 
 You **SHOULD: -**
 
--   Use descriptive names, favouring readability over brevity.
+- Use descriptive names, favouring readability over brevity.
 
--   **Favour singular nouns over plurals for table names views and
+- **Favour singular nouns over plurals for table names views and
     scalars** (columns, parameters and variables.) T**he use of a
     collective name is best.**
 
--   **Use a mix of verbs and nouns in the present tense for functions
+- **Use a mix of verbs and nouns in the present tense for functions
     and stored procedure names**[^9]**.**
 
--   Use uppercase for all *Keywords, Built-in functions, built-in
+- Use uppercase for all *Keywords, Built-in functions, built-in
     datatypes* and *Global Variables*[^10].
-    
 
--   Use Pascal Casing (with the first letter and each subsequent
+- Use Pascal Casing (with the first letter and each subsequent
     concatenated word capitalized) consistently for all other
     names[^11].
 
--   **Use capitalization where common abbreviations**[^12] **are used.**
+- **Use capitalization where common abbreviations**[^12] **are used.**
 
--   Use prefixes and underscores for the following common naming
+- Use prefixes and underscores for the following common naming
     conventions (next page).
 
 You **SHOULD NOT: -**
 
--   **Rely on** system generated named objects such as constraints or
+- **Rely on** system generated named objects such as constraints or
     indexes.
 
--   Use abbreviations, spaces, or non-standard characters and reserved
+- Use abbreviations, spaces, or non-standard characters and reserved
     words. Doing so avoids the need to use square brackets.
 
--   **Prefix stored procedures with** sp\_ **Doing so impedes
+- **Prefix stored procedures with** sp\_ **Doing so impedes
     performance because SQL Server searches the master database first.**
-    
 
--   Use prefixes (Hungarian notation), suffixes and underscores except
+- Use prefixes (Hungarian notation), suffixes and underscores except
     where specific naming conventions exist (see the next page.)
 
 |     | **Prefix** | > **Usage** | > **Example** | > **Notes** |

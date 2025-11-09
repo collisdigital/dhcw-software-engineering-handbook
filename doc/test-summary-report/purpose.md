@@ -12,4 +12,3 @@ template vary.
 
 When you are ready to start, base your report on the SDS-TEM-5 Test
 Summary Report template.
-

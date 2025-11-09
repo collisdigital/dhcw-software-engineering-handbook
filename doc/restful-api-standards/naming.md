@@ -79,4 +79,3 @@ purposes and **MUST NOT** be repurposed.
 
 !!! info "Further reading and information"
     [Microsoft Graph REST API Guidelines](https://github.com/microsoft/api-guidelines/blob/vNext/graph/GuidelinesGraph.md)
-

@@ -1,6 +1,6 @@
 # Essential good practice checklist
 
-| * * N o . * * | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
+| **N o .** | **Checklist Item** |  | **Guide or standard** | **Excep tions** |
 | --- | --- | --- | --- | --- |
 | 1 | You store program code in our source control systems. | ☐ | [Use our source control sys tems](use-our-source-control-systems.md) |  |
 | 2 | You have planned a clear repo structure. | ☐ | [Establish a clear repo structu re](establish-a-clear-repo-structure.md) |  |
@@ -10,4 +10,3 @@
 | 6 | You use an automated build and deployment pipeline that builds all components and includes validation checks, such as unit tests, linting, and schema validation. | ☐ | [Always deploy from source contro l](always-deploy-from-source-control.md) |  |
 | 7 | You have an automated build and deployment pipeline (or re-runnable and source-controlled scripts) for relevant environments, such as - *System Integration Testing* (sometimes called *Test* or *QA*) *User Acceptance Testing* (if applicable) *Production* | ☐ | [Always deploy from source contro l](always-deploy-from-source-control.md) |  |
 | 8 | You manage deployments to each environment using Git's branch and tag commands. | ☐ | [Always deploy from source contro l](always-deploy-from-source-control.md) |  |
-

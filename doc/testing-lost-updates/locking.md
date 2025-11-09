@@ -29,4 +29,3 @@ fields[^2] - on an active part of a form for example.
 Any locking strategy must also ensure data integrity. A locking strategy
 that allows users to assign an invalid combination of GP and GP Practice
 is still wrong!
-

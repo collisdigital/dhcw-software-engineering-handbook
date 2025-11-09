@@ -6,4 +6,3 @@ consistent use across the organisation.
 
 This standard is designed to help you plan, build and release software
 in a way that enables seamless coordination across teams and boundaries.
-

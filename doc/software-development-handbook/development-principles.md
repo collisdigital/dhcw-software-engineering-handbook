@@ -109,4 +109,3 @@ requirements.
 
 !!! tip "Practical tips"
     Access to *github.com/GIGCymru/GitHub-GIG-Cymru/wiki/Public-Repos* requires a DHCW GitHub Enterprise account.
-

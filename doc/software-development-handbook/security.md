@@ -4,16 +4,16 @@ DHCW adheres to the ISO 27001 standard for Information security
 management. To comply with certification requirements, you **MUST**
 follow secure development practices, including:
 
--   Analysing code for quality and vulnerabilities.
+- Analysing code for quality and vulnerabilities.
 
--   Applying branch policies and security controls to restrict access to
+- Applying branch policies and security controls to restrict access to
     code repos.
 
--   Implementing vulnerability scanning within CI and CD pipelines.
+- Implementing vulnerability scanning within CI and CD pipelines.
 
--   Keeping systems updated with the latest security patches.
+- Keeping systems updated with the latest security patches.
 
--   Ensuring encryption of data in transit and at rest.
+- Ensuring encryption of data in transit and at rest.
 
 More detailed guidance, refer to the relevant documents below.
 
@@ -28,4 +28,3 @@ More detailed guidance, refer to the relevant documents below.
 
 !!! tip "Practical tips"
     Security standards are not published to our document management system, iPassport. Contact the Cyber Security team to obtain the latest versions.
-

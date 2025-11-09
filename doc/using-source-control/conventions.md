@@ -16,4 +16,3 @@ this document are to be interpreted as described in [RFC
 
 !!! info "Further reading and information"
     Links to further guides, information and work instructions. If a hyperlink is missing, search for the document in our Document Management System.
-

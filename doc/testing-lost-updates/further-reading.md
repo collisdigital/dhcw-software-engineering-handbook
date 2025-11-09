@@ -11,4 +11,3 @@ Fowler**, **Addison-Wesley (2002)**
 
 [^2]: Although locking at field level is unlikely to be practical for
     Pessimistic locking.
-

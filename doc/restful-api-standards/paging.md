@@ -229,13 +229,13 @@ client.
 
 When implementing paging, the server **MUST** ensure the following:
 
--   The server **MUST** sort on a unique value. This may require sorting
+- The server **MUST** sort on a unique value. This may require sorting
     on an additional value (typically a primary key) if necessary.
 
--   Sorting and filtering parameters **MUST** be consistent across pages
+- Sorting and filtering parameters **MUST** be consistent across pages
     to maintain predictability.
 
--   Query options **MUST NOT** be changed while iterating over a partial
+- Query options **MUST NOT** be changed while iterating over a partial
     result set.
 
 (See the sections on [Filtering](filtering.md), [Sorting](sorting.md) and
@@ -311,12 +311,11 @@ The server **MAY** support client paging of nested resources and
 When implementing paging, the server **SHOULD** consider the following
 key aspects:
 
--   Establish a method for handling updates to maintain data consistency
+- Establish a method for handling updates to maintain data consistency
     and accuracy.
 
--   Implement efficient data retrieval mechanisms to minimise
+- Implement efficient data retrieval mechanisms to minimise
     performance impact.
 
--   Ensure secure encoding of continuation tokens to protect client
+- Ensure secure encoding of continuation tokens to protect client
     privacy and data integrity.
-

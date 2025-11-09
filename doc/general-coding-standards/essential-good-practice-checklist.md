@@ -14,4 +14,3 @@
 | 10 | You perform code analysis in build pipelines. | ☐ | [Run code analysis in your pipelines](analyse-your-code.md#run-code-analysis-in-your-pipelines-as-well-as-the-ide) |  |
 | 11 | You check third party dependencies for security vulnerabilities. | ☐ | [Check third-party packages](analyse-your-code.md) |  |
 | 12 | You publish metrics to your dashboards. | ☐ | [Publish and review ,metrics](analyse-your-code.md) |  |
-

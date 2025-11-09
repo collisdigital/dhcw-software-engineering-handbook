@@ -28,12 +28,12 @@ return an HTTP response with status 415 UNSUPPORTED MEDIA TYPE.
 HTTP headers containing datetime values **MUST** use the RFC 5322
 format:
 
--   ddd, dd MMM yyyy HH:mm:ss Z
+- ddd, dd MMM yyyy HH:mm:ss Z
 
 Dates or timestamps in the JSON payload of the response **MUST** conform to
 the RFC 3339 format:
 
--   YYYY-MM-DDTHH:mm:ssZ
+- YYYY-MM-DDTHH:mm:ssZ
 
 ## Payload size
 
@@ -53,4 +53,3 @@ for some platforms.
     [RFC 5322 - Internet Message Format](https://datatracker.ietf.org/doc/html/rfc5322)
 
     [RFC 3339 - Date and Time on the Internet: Timestamps](https://datatracker.ietf.org/doc/html/rfc3339)
-

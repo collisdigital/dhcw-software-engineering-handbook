@@ -14,16 +14,16 @@ The API **MUST** specify which [HTTP status
 codes](http-implementation.md) indicate transient faults that are
 safe to retry:
 
--   5xx errors (e.g. 500 Internal Server Error) indicate server-side
+- 5xx errors (e.g. 500 Internal Server Error) indicate server-side
     faults.
 
--   Some 4xx errors **MAY** also be transient and safe to retry, such as:
+- Some 4xx errors **MAY** also be transient and safe to retry, such as:
 
-    -   429 Too Many Requests (after respecting Retry-After).
+  - 429 Too Many Requests (after respecting Retry-After).
 
-    -   408 Request Timeout, if caused by temporary network issues.
+  - 408 Request Timeout, if caused by temporary network issues.
 
-    -   409 Conflict, if due to a temporary resource state.
+  - 409 Conflict, if due to a temporary resource state.
 
 ## Retry strategies
 
@@ -37,21 +37,20 @@ spikes in retry traffic.
 
 The API **SHOULD** document:
 
--   The m*aximum number of retry attempts* before a failure is
+- The m*aximum number of retry attempts* before a failure is
     considered permanent.
 
--   *Recommended wait times* between retries.
+- *Recommended wait times* between retries.
 
--   *Rate limits* to avoid excessive retries.
+- *Rate limits* to avoid excessive retries.
 
 Additional **RECOMMENDATIONS**:
 
--   APIs **SHOULD** use *circuit breakers* to prevent repeated calls
+- APIs **SHOULD** use *circuit breakers* to prevent repeated calls
     > when a service remains unavailable.
 
--   Clients **SHOULD** *randomise retries* to prevent simultaneous retry
+- Clients **SHOULD** *randomise retries* to prevent simultaneous retry
     > bursts.
 
--   If the API is deployed on Apigee, it **MUST** integrate with
+- If the API is deployed on Apigee, it **MUST** integrate with
     > Apigee's transient fault handling features.
-

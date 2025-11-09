@@ -16,10 +16,10 @@ three main options:
 Your repos **MUST NOT** become a confusing mess. To keep them organised
 you **MUST**:
 
--   Deploy applications only when code changes are made to that specific
+- Deploy applications only when code changes are made to that specific
     application.
 
--   Restrict access to distinct parts of your codebase when needed.
+- Restrict access to distinct parts of your codebase when needed.
 
 For example, the Single Record Product team might face these scenarios:
 
@@ -60,4 +60,3 @@ If your apps are each tied to their own Visual Studio .sln file,
     [Misconceptions about Monorepos: Monorepo != Monolith](https://blog.nrwl.io/misconceptions-about-monorepos-monorepo-monolith-df1250d4b03c)
 
     [The Big Ball of Mud and Other Architectural Disasters (codinghorror.com)](https://blog.codinghorror.com/the-big-ball-of-mud-and-other-architectural-disasters/)
-

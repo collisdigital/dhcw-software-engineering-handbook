@@ -8,4 +8,3 @@
 | SDS-CS-4 | RESTful API design and build standards |
 | SDS-CS-5 | How to organise your software solution |
 | SDS-CS-6 | General coding standards |
-

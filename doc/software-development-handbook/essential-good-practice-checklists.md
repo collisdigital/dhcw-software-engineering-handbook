@@ -4,7 +4,7 @@ Use these checklists to help follow our Principles & Standards. We
 cross-reference each item to a relevant section in our standards or
 guides. Exceptions are noted where they may apply.
 
-### Requirements gathering, analysis and specifications
+## Requirements gathering, analysis and specifications
 
 | **Item** |  |  | **Guide or standard** | **Exceptions** |
 | --- | --- | --- | --- | --- |
@@ -100,4 +100,3 @@ guides. Exceptions are noted where they may apply.
 | 55 | You have the appropriate licences or subscriptions for the tools you use. | ☐ | [Activate software subscriptions](development-tools.md) |  |
 | 56 | You comply with licencing terms and conditions for any 3^rd^ party software you use, including open-source software. | ☐ | [Activate software subscriptions](development-tools.md) |  |
 | 57 | You seek agreement from the Software Development Manager, Lead Developers group or Application & Architecture Assurance group before choosing a new technology. | ☐ | [Evaluating and adopting new tools](development-tools.md) |  |
-

@@ -14,4 +14,3 @@ be rare and carefully considered.
     [Seven ineffective coding habits of many programmers - Kevlin Henney - YouTu be](https://www.youtube.com/watch?v=oyyFKHpzL0Q)
 
     [Uses and misuses of implicit typing \| Microsoft Learn](https://learn.microsoft.com/en-gb/archive/blogs/ericlippert/uses-and-misuses-of-implicit-typing)
-

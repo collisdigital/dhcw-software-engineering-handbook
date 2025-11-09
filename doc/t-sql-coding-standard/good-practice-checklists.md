@@ -64,4 +64,3 @@ standards and guides; Exceptions are noted where they may apply.
 
 [^16]: E.g. D:\\Users\\NatTD_ge080206\\*AppData\\Local\\Red Gate\\SQL
     Prompt 9\\StylesV2*
-

@@ -6,4 +6,3 @@ change.
 
 Revision History statuses **SHOULD** be limited to *Draft, Draft-Update*
 or *Issued.*
-

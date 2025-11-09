@@ -49,4 +49,3 @@ Profile Image.*
 You **SHOULD** disable [extensions](using-azure-devops-extensions.md) that
 send telemetry or access repositories automatically in project settings
 before using the project.
-

@@ -7,11 +7,10 @@ This requires a little forethought when creating a solution that others
 will use (often without the originating developer present.) So, it's
 critical we create software solutions that are:
 
--   Clear and explicit
+- Clear and explicit
 
--   Understandable by developers of all abilities
+- Understandable by developers of all abilities
 
--   Safely extensible & well documented
+- Safely extensible & well documented
 
 The following sections provide guidance on how we can achieve this.
-

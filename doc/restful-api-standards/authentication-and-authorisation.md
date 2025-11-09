@@ -86,11 +86,11 @@ assertion to authenticate with the token endpoint, as described in RFC
 When using authentication level 3 or above, access tokens **MUST**
 expire within the following time frames:
 
--   For [Business Confidential data](appendix-a-classifications.md): within 1 day.
+- For [Business Confidential data](appendix-a-classifications.md): within 1 day.
 
--   For [Sensitive data](appendix-a-classifications.md): within 1 hour.
+- For [Sensitive data](appendix-a-classifications.md): within 1 hour.
 
--   For [Highly Sensitive data](appendix-a-classifications.md): tokens **SHOULD** expire
+- For [Highly Sensitive data](appendix-a-classifications.md): tokens **SHOULD** expire
     within 5 minutes but **MUST** expire within 1 hour.
 
 ## Restrictions on data use
@@ -119,9 +119,8 @@ unless they are limited to reading or writing public data.
 
 If the server permits direct browser access then:
 
--   The outbound HTTP header Access-Control-Allow-Origin **MUST** be set
+- The outbound HTTP header Access-Control-Allow-Origin **MUST** be set
     to a specific value and **MUST NOT** be a wildcard.
 
--   The inbound HTTP header Origin **MUST** be validated against a list
+- The inbound HTTP header Origin **MUST** be validated against a list
     of permitted host names for authenticated applications.
-

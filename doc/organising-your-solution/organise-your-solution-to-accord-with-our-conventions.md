@@ -87,4 +87,3 @@ But they are very similar and equally valid.
     [.NET project structure · Gi tHub](https://gist.github.com/davidfowl/ed7564297c61fe9ab814)
 
     [GitHub - github/gitignore: A collection of useful .gitignore templates](https://github.com/github/gitignore)
-

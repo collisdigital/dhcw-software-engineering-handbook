@@ -37,4 +37,3 @@ look like this:
     *Location: /api/patients/9991234568*
 
     *Date: 2024-02-17T12:00:00Z*
-

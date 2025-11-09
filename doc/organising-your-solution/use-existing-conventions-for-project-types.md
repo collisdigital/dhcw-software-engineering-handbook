@@ -8,4 +8,3 @@ whereas razor pages use folder hierarchy.
 However, the project type determines this - not the software team. And
 you **SHOULD** follow the namespace convention described above for any
 additional folders you add to these project types.
-

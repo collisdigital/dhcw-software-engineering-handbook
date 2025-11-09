@@ -11,4 +11,3 @@ file.
     If the RootFolderName does not describe the project, replace it with something more accurate and understandable.
 
     Do this before you commit to source control. In doing so you avoid the need for communicating a change and making source control work overtime after the initial commit.
-
