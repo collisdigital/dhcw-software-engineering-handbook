@@ -46,15 +46,15 @@ In this next example, we will step through a query making sure to: -
 
 7.  Add the semi colon terminator.
 
-|  | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT \* FROM Report] |
+|  | >  | > [SELECT \* FROM Report] |
 | --- | --- | --- |
-| > 1 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT **Report.Id, SubjectGivenName f, > Report.SubjectFamilyName**] > > [FROM Report] |
-| > 2 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM **dbo**.Report] |
-| > 3 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM dbo.Report **AS Report**] |
-| > 4 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, **Report**.SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
-| > 5 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, Report.SubjectGivenName > **FirstName**, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
-| > 6 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, Report.SubjectGivenName **AS** > FirstName, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
-| > 7 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT Report.Id, Report.SubjectGivenName AS > FirstName, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report**;**] |
+| > 1 | >  | > [SELECT **Report.Id, SubjectGivenName f, > Report.SubjectFamilyName**] > > [FROM Report] |
+| > 2 | >  | > [SELECT Report.Id, SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM **dbo**.Report] |
+| > 3 | >  | > [SELECT Report.Id, SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM dbo.Report **AS Report**] |
+| > 4 | >  | > [SELECT Report.Id, **Report**.SubjectGivenName f, > Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
+| > 5 | >  | > [SELECT Report.Id, Report.SubjectGivenName > **FirstName**, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
+| > 6 | >  | > [SELECT Report.Id, Report.SubjectGivenName **AS** > FirstName, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report] |
+| > 7 | >  | > [SELECT Report.Id, Report.SubjectGivenName AS > FirstName, Report.SubjectFamilyName] > > [FROM dbo.Report AS Report**;**] |
 
 ## 7.4 dates #1
 
@@ -74,10 +74,10 @@ We step through the next example ensuring to
 
 2.  Eliminate arithmetic operators against date fields.
 
-|  | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT ObservationRequest.ReportId] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE > DATEDIFF(DAY,Observ ationRequest.AuthorisedDateTime,GETDATE())\<=30;] |
+|  | > | > [SELECT ObservationRequest.ReportId] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE > DATEDIFF(DAY,Observ ationRequest.AuthorisedDateTime,GETDATE())\<=30;] |
 | --- | --- | --- |
-| > 1 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT ObservationRequest.ReportId] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE CAST(ObservationRequest.AuthorisedDateTime AS > DATE) \> GETDATE()-30;] |
-| > 2 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > [SELECT COUNT(DISTINCT > ObservationRequest.ReportId)] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE CAST(ObservationRequest.AuthorisedDateTime AS > DATE) \>= DATEADD(DAY,-30,CAST(GETDATE() AS > DATE));] |
+| > 1 | >  | > [SELECT ObservationRequest.ReportId] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE CAST(ObservationRequest.AuthorisedDateTime AS > DATE) \> GETDATE()-30;] |
+| > 2 | >  | > [SELECT COUNT(DISTINCT > ObservationRequest.ReportId)] > > [FROM dbo.ObservationRequest > ObservationRequest] > > [WHERE CAST(ObservationRequest.AuthorisedDateTime AS > DATE) \>= DATEADD(DAY,-30,CAST(GETDATE() AS > DATE));] |
 
 ## Stored procedures #1
 
@@ -92,12 +92,12 @@ sure to:
 
 4.  Return a value.
 
-|  | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE prGetReportMasterId \@Id BIGINT] [AS] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] |
+|  |  | [CREATE PROCEDURE prGetReportMasterId \@Id BIGINT] [AS] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] |
 | --- | --- | --- |
-| 1 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] |
-| 2 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [END;] |
-| 3 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SET NOCOUNT ON;] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [END;] |
-| 4 | ! [ E x a m p l e o f g o o d p r a c t i c e ]( . / m e d i a / i m a g e 3 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SET NOCOUNT ON;] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [RETURN 0;] [END;] |
+| 1 |  | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] |
+| 2 |  | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [END;] |
+| 3 |  | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SET NOCOUNT ON;] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [END;] |
+| 4 |  | [CREATE PROCEDURE dbo.prGetReportMasterId \@Id BIGINT] [AS] [BEGIN] [SET NOCOUNT ON;] [SELECT] [Report.Id] [, Report.MasterReportId] [FROM] [dbo.Report AS Report] [ WHERE Report.Id = \@Id;] [RETURN 0;] [END;] |
 
 ## Stored procedures #2
 
@@ -117,12 +117,12 @@ sure to:
 !!! note ">"
     [CREATE PROCEDURE dbo.InsertReferenceDataValue] > [\@ReferenceDataDomainId INT] > [, \@Code VARCHAR] > [, \@Rubric VARCHAR] > [, \@Active BIT] > [, \@ParentId INT = NULL] > [AS] > [BEGIN] > [INSERT dbo.ReferenceDataValue] > [VALUES] > [(] > [\@ReferenceDataDomainId] > [ , \@Code] > [ , \@Rubric] > [ , GETDATE()] > [ , \@Active] > [ , \@ParentId] > [);] > [RETURN 0;] > [END;]
 
-| 1 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR**(50)**] [, \@Rubric VARCHAR**(200)**] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [INSERT dbo.ReferenceDataValue] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
+| 1 |  | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR**(50)**] [, \@Rubric VARCHAR**(200)**] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [INSERT dbo.ReferenceDataValue] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
 | --- | --- | --- |
-| 2 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
-| 3 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [**SET NOCOUNT ON;**] [**SET XACT_ABORT ON;**] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
-| 4 | ! [ E x a m p l e o f p r a c t i c e s t o a v o i d ]( . / m e d i a / i m a g e 6 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [SET NOCOUNT ON;] [SET XACT_ABORT ON;] [BEGIN TRANSACTION] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [COMMIT] [RETURN 0;] [END;] |
-| 5 | ! [ E x a m p l e o f g o o d p r a c t i c e ]( . / m e d i a / i m a g e 3 . p n g ) { w i d t h = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " h e i g h t = " 0 . 1 9 6 8 5 0 3 9 3 7 0 0 7 8 7 4 i n " } | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [SET NOCOUNT ON;] [SET XACT_ABORT ON;] [BEGIN TRY] [ BEGIN TRANSACTION] [ INSERT dbo.ReferenceDataValue] [ (] [ Id] [ , ReferenceDataDomainId] [ , Code] [ , Rubric] [ , DateTimeCreated] [ , Active] [ , ParentId] [ )] [ VALUES] [ (] [ \@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [ );] [ COMMIT] [END TRY] [BEGIN CATCH] [ DECLARE \@ErrorMsg VARCHAR(4000);] [ SET \@ErrorMsg = ERROR_MESSAGE();] [ \-- Rollback our transaction] [ IF @@TRANCOUNT\>0] [ ROLLBACK;] [ \--Re-raise the error to our application;] [ RAISERROR(@ErrorMsg, 16, 1);] [END CATCH;] [RETURN 0;] [END;] |
+| 2 |  | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
+| 3 |  | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [**SET NOCOUNT ON;**] [**SET XACT_ABORT ON;**] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [RETURN 0;] [END;] |
+| 4 |  | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [SET NOCOUNT ON;] [SET XACT_ABORT ON;] [BEGIN TRANSACTION] [INSERT dbo.ReferenceDataValue] [(] [Id] [, ReferenceDataDomainId] [, Code] [, Rubric] [, DateTimeCreated] [, Active] [, ParentId] [)] [VALUES] [(] [\@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [);] [COMMIT] [RETURN 0;] [END;] |
+| 5 |  | [CREATE PROCEDURE dbo.InsertReferenceDataValue] [\@ReferenceDataDomainId INT] [, \@Code VARCHAR(50)] [, \@Rubric VARCHAR(200)] [, \@Active BIT] [, \@ParentId INT = NULL] [AS] [BEGIN] [SET NOCOUNT ON;] [SET XACT_ABORT ON;] [BEGIN TRY] [ BEGIN TRANSACTION] [ INSERT dbo.ReferenceDataValue] [ (] [ Id] [ , ReferenceDataDomainId] [ , Code] [ , Rubric] [ , DateTimeCreated] [ , Active] [ , ParentId] [ )] [ VALUES] [ (] [ \@ReferenceDataDomainId] [ , \@Code] [ , \@Rubric] [ , GETDATE()] [ , \@Active] [ , \@ParentId] [ );] [ COMMIT] [END TRY] [BEGIN CATCH] [ DECLARE \@ErrorMsg VARCHAR(4000);] [ SET \@ErrorMsg = ERROR_MESSAGE();] [ \-- Rollback our transaction] [ IF @@TRANCOUNT\>0] [ ROLLBACK;] [ \--Re-raise the error to our application;] [ RAISERROR(@ErrorMsg, 16, 1);] [END CATCH;] [RETURN 0;] [END;] |
 
 ## 6.8 naming
 
@@ -150,7 +150,6 @@ The conformant query implements the following rules: -
 
 -   SQL Prompt formatting style rule applied.
 
-| > 1 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > SELECT SubjectGivenName, SubjectFamilyName, \[Hospital > Ward\] from tblPatients WHERE ID = \@int_ID and > SubjectGivenName = \@str_param2; |
+| > 1 | >  | > SELECT SubjectGivenName, SubjectFamilyName, \[Hospital > Ward\] from tblPatients WHERE ID = \@int_ID and > SubjectGivenName = \@str_param2; |
 | --- | --- | --- |
-| > 2 | > {w idt h=" 0.1 968 503 937 007 874 in" > hei ght ="0 .19 685 039 370 078 74i n"} | > SELECT > > Patient.SubjectGivenName AS FirstName > > , Patient.SubjectFamilyName AS LastName > > , Patient.\[Hospital Ward\] AS HospitalWard > > FROM > > dbo.tblPatients AS Patient > > WHERE > > Patient.ID = \@PatientId > > AND Patient.SubjectGivenName = \@FirstName; |
-
+| > 2 | >  | > SELECT > > Patient.SubjectGivenName AS FirstName > > , Patient.SubjectFamilyName AS LastName > > , Patient.\[Hospital Ward\] AS HospitalWard > > FROM > > dbo.tblPatients AS Patient > > WHERE > > Patient.ID = \@PatientId > > AND Patient.SubjectGivenName = \@FirstName; |
