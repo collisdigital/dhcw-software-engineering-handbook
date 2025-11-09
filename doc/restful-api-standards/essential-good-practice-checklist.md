@@ -28,4 +28,5 @@
 | 2 3 | Test reports include security testing and code coverage metrics. | ☐ |  |  |
 | 2 4 | You follow our documentation recommendations. | ☐ | Documentation |  |
 
+[^1]: Note Synthetic data should be useful and reflect the use-case of
     the API

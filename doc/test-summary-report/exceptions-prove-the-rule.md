@@ -8,4 +8,7 @@ add significant value for the reader.
 However, it is important to maintain the integrity of the template, and
 changes **SHOULD NOT** be made casually.
 
+[^1]: And later versions.
+
+[^2]: WIA-SOP-71 Wales Informatics Assurance GROUP (WIAG) Process,
     section 2 Scope.
