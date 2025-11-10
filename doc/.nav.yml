@@ -1,11 +1,7 @@
 nav:
   - Home: index.md
   - Using Source Control:
-    - Purpose: using-source-control/purpose.md
-    - Scope: using-source-control/scope.md
-    - References: using-source-control/references.md
-    - Conventions: using-source-control/conventions.md
-    - The need for guidance: using-source-control/the-need-for-guidance.md
+    - Introduction: using-source-control/introduction.md
     - Use our source control systems: using-source-control/use-our-source-control-systems.md
     - What to include in source control: using-source-control/what-to-include-in-source-control.md
     - Use Git: using-source-control/use-git.md
@@ -22,10 +18,7 @@ nav:
     - Exceptions: using-source-control/exceptions.md
     - Essential good practice checklist: using-source-control/essential-good-practice-checklist.md
   - T-SQL Coding Standard:
-    - Purpose: t-sql-coding-standard/purpose.md
-    - Scope: t-sql-coding-standard/scope.md
-    - Conventions: t-sql-coding-standard/conventions.md
-    - The need for guidance: t-sql-coding-standard/the-need-for-guidance.md
+    - Introduction: t-sql-coding-standard/introduction.md
     - Avoid using t SQL to execute business logic: t-sql-coding-standard/avoid-using-t-sql-to-execute-business-logic.md
     - Follow these rules when using an object relational mapper ORM: t-sql-coding-standard/follow-these-rules-when-using-an-object-relational-mapper-orm.md
     - General good practice: t-sql-coding-standard/general-good-practice.md
@@ -52,11 +45,7 @@ nav:
     - SQL prompt configuration: t-sql-coding-standard/sql-prompt-configuration.md
     - Good practice checklists: t-sql-coding-standard/good-practice-checklists.md
   - RESTful API Standards:
-    - Purpose: restful-api-standards/purpose.md
-    - Scope: restful-api-standards/scope.md
-    - References: restful-api-standards/references.md
-    - Conventions: restful-api-standards/conventions.md
-    - The need for guidance: restful-api-standards/the-need-for-guidance.md
+    - Introduction: restful-api-standards/introduction.md
     - General principles: restful-api-standards/general-principles.md
     - Defintions: restful-api-standards/defintions.md
     - FHIR fast healthcare interoperability standards: restful-api-standards/fhir-fast-healthcare-interoperability-standards.md
@@ -90,11 +79,7 @@ nav:
     - Appendix a classifications: restful-api-standards/appendix-a-classifications.md
     - Essential good practice checklist: restful-api-standards/essential-good-practice-checklist.md
   - Organising Your Solution:
-    - Purpose: organising-your-solution/purpose.md
-    - Scope: organising-your-solution/scope.md
-    - References: organising-your-solution/references.md
-    - Conventions: organising-your-solution/conventions.md
-    - The need for guidance: organising-your-solution/the-need-for-guidance.md
+    - Introduction: organising-your-solution/introduction.md
     - Organise your solution to accord with our conventions: organising-your-solution/organise-your-solution-to-accord-with-our-conventions.md
     - Use physical folders: organising-your-solution/use-physical-folders.md
     - Create a root folder for your solution rootfoldername: organising-your-solution/create-a-root-folder-for-your-solution-rootfoldername.md
@@ -114,11 +99,7 @@ nav:
     - Exceptions prove the rule: organising-your-solution/exceptions-prove-the-rule.md
     - Good practice checklists: organising-your-solution/good-practice-checklists.md
   - General Coding Standards:
-    - Purpose: general-coding-standards/purpose.md
-    - Scope: general-coding-standards/scope.md
-    - References: general-coding-standards/references.md
-    - Conventions: general-coding-standards/conventions.md
-    - The need for guidance: general-coding-standards/the-need-for-guidance.md
+    - Introduction: general-coding-standards/introduction.md
     - Write clean code: general-coding-standards/write-clean-code.md
     - Follow SOLID principles: general-coding-standards/follow-solid-principles.md
     - Follow microsofts coding conventions: general-coding-standards/follow-microsofts-coding-conventions.md
@@ -127,11 +108,7 @@ nav:
     - Examples: general-coding-standards/examples.md
     - Essential good practice checklist: general-coding-standards/essential-good-practice-checklist.md
   - Azure DevOps Handbook:
-    - Purpose: azure-devops-handbook/purpose.md
-    - Scope: azure-devops-handbook/scope.md
-    - References: azure-devops-handbook/references.md
-    - Conventions: azure-devops-handbook/conventions.md
-    - The need for guidance: azure-devops-handbook/the-need-for-guidance.md
+    - Introduction: azure-devops-handbook/introduction.md
     - Azure DevOps basics: azure-devops-handbook/azure-devops-basics.md
     - Joining an existing project: azure-devops-handbook/joining-an-existing-project.md
     - Creating a new project: azure-devops-handbook/creating-a-new-project.md
@@ -155,12 +132,7 @@ nav:
     - Data privacy and availability: azure-devops-handbook/data-privacy-and-availability.md
     - Essential good practice checklist: azure-devops-handbook/essential-good-practice-checklist.md
   - Software Development Handbook:
-    - Purpose: software-development-handbook/purpose.md
-    - Scope: software-development-handbook/scope.md
-    - Roles and responsibilities: software-development-handbook/roles-and-responsibilities.md
-    - References: software-development-handbook/references.md
-    - Conventions: software-development-handbook/conventions.md
-    - The need for guidance: software-development-handbook/the-need-for-guidance.md
+    - Introduction: software-development-handbook/introduction.md
     - Development tools: software-development-handbook/development-tools.md
     - Development principles: software-development-handbook/development-principles.md
     - Agile delivery using Scrum: software-development-handbook/agile-delivery-using-scrum.md
@@ -171,10 +143,7 @@ nav:
     - Exceptions: software-development-handbook/exceptions.md
     - Essential good practice checklists: software-development-handbook/essential-good-practice-checklists.md
   - Software Subscriptions:
-    - Purpose: software-subscriptions/purpose.md
-    - Scope: software-subscriptions/scope.md
-    - Roles responsibilities: software-subscriptions/roles-responsibilities.md
-    - References: software-subscriptions/references.md
+    - Introduction: software-subscriptions/introduction.md
     - How this guide is organised: software-subscriptions/how-this-guide-is-organised.md
     - What subscriptions are available: software-subscriptions/what-subscriptions-are-available.md
     - Identify the subscription you need: software-subscriptions/identify-the-subscription-you-need.md
@@ -182,10 +151,7 @@ nav:
     - Cancelling a subscription: software-subscriptions/cancelling-a-subscription.md
     - Managing subscriptions: software-subscriptions/managing-subscriptions.md
   - Testing for Lost Updates:
-    - Purpose: testing-lost-updates/purpose.md
-    - Scope: testing-lost-updates/scope.md
-    - Roles responsibilities: testing-lost-updates/roles-responsibilities.md
-    - References: testing-lost-updates/references.md
+    - Introduction: testing-lost-updates/introduction.md
     - How this guide is organised: testing-lost-updates/how-this-guide-is-organised.md
     - Whats a lost update: testing-lost-updates/whats-a-lost-update.md
     - How do you test for lost updates: testing-lost-updates/how-do-you-test-for-lost-updates.md
@@ -198,10 +164,7 @@ nav:
     - Example test scripts: testing-lost-updates/example-test-scripts.md
     - Further reading: testing-lost-updates/further-reading.md
   - Test Summary Report:
-    - Purpose: test-summary-report/purpose.md
-    - Scope: test-summary-report/scope.md
-    - Roles responsibilities: test-summary-report/roles-responsibilities.md
-    - References: test-summary-report/references.md
+    - Introduction: test-summary-report/introduction.md
     - How this guide is organised: test-summary-report/how-this-guide-is-organised.md
     - When to create a test summary report: test-summary-report/when-to-create-a-test-summary-report.md
     - Characteristics of a good test summary report: test-summary-report/characteristics-of-a-good-test-summary-report.md
@@ -219,11 +182,7 @@ nav:
     - Example reports: test-summary-report/example-reports.md
     - Exceptions prove the rule: test-summary-report/exceptions-prove-the-rule.md
   - Coding Standard Template:
-    - Purpose: coding-standard-template/purpose.md
-    - Scope: coding-standard-template/scope.md
-    - References: coding-standard-template/references.md
-    - Conventions: coding-standard-template/conventions.md
-    - The need for guidance: coding-standard-template/the-need-for-guidance.md
+    - Introduction: coding-standard-template/introduction.md
     - Use a brief heading to describe the standards: coding-standard-template/use-a-brief-heading-to-describe-the-standards.md
     - Exceptions prove the rule: coding-standard-template/exceptions-prove-the-rule.md
     - Good practice checklists: coding-standard-template/good-practice-checklists.md
