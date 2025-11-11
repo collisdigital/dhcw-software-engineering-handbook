@@ -4950,12 +4950,12 @@ behaviour.</p>
     document them in the <a href="../documentation/">OpenAPI definition</a>.</p>
 </li>
 <li>
-<p>APIs <strong>SHOULD</strong> return 405 Method Not Allowed for unsupported HTTP
+<p>APIs <strong>SHOULD</strong> return <code>405 Method Not Allowed</code> for unsupported HTTP
     methods instead of silently ignoring them.</p>
 </li>
 <li>
-<p>APIs <strong>MUST</strong> adhere to the standard HTTP semantics defined in <em>RFC
-    9110,</em> including idempotency rules.</p>
+<p>APIs <strong>MUST</strong> adhere to the standard HTTP semantics defined in <em>RFC 9110</em>,
+    including idempotency rules.</p>
 </li>
 <li>
 <p>Non-standard HTTP verbs <strong>MUST NOT</strong> be used.</p>
@@ -4980,64 +4980,64 @@ behaviour.</p>
 <tbody>
 <tr>
 <td><strong>LIST</strong></td>
-<td>GET</td>
-<td>/resources</td>
+<td><code>GET</code></td>
+<td><code>/resources</code></td>
 <td>None</td>
 <td>Collection Resource</td>
 <td>✅ Yes</td>
 </tr>
 <tr>
 <td><strong>RETRIEVE</strong></td>
-<td>GET</td>
-<td>/resources/<em>{id}</em></td>
+<td><code>GET</code></td>
+<td><code>/resources/{id}</code></td>
 <td>None</td>
 <td>Resource</td>
 <td>✅ Yes</td>
 </tr>
 <tr>
 <td><strong>CREATE</strong></td>
-<td>POST</td>
-<td>/resources</td>
+<td><code>POST</code></td>
+<td><code>/resources</code></td>
 <td>Resource</td>
 <td>Resource</td>
 <td>❌ No</td>
 </tr>
 <tr>
 <td><strong>REPLACE</strong></td>
-<td>PUT</td>
-<td>/resources/<em>{id}</em></td>
+<td><code>PUT</code></td>
+<td><code>/resources/{id}</code></td>
 <td>Resource</td>
 <td>Resource</td>
 <td>✅ Yes</td>
 </tr>
 <tr>
 <td><strong>MODIFY</strong></td>
-<td>PATCH</td>
-<td>/resources/<em>{id}</em></td>
+<td><code>PATCH</code></td>
+<td><code>/resources/{id}</code></td>
 <td>Partial Resource</td>
 <td>Resource</td>
 <td>❌ No</td>
 </tr>
 <tr>
 <td><strong>DELETE</strong></td>
-<td>DELETE</td>
-<td>/resources/<em>{id}</em></td>
+<td><code>DELETE</code></td>
+<td><code>/resources/{id}</code></td>
 <td>None</td>
 <td>None</td>
 <td>✅ Yes</td>
 </tr>
 <tr>
 <td><strong>RETRIEVE HEADERS</strong></td>
-<td>HEAD</td>
-<td>/resources/<em>{id}</em></td>
+<td><code>HEAD</code></td>
+<td><code>/resources/{id}</code></td>
 <td>None</td>
 <td>None</td>
 <td>✅ Yes</td>
 </tr>
 <tr>
 <td><strong>QUERY CAPABILITIES</strong></td>
-<td>OPTIONS</td>
-<td>/resources</td>
+<td><code>OPTIONS</code></td>
+<td><code>/resources</code></td>
 <td>None</td>
 <td>Allowed Methods</td>
 <td>✅ Yes</td>
@@ -5046,16 +5046,16 @@ behaviour.</p>
 </table>
 <ul>
 <li>
-<p>GET, HEAD, OPTIONS, and DELETE <strong>MUST NOT</strong> modify resources.</p>
+<p><code>GET</code>, <code>HEAD</code>, <code>OPTIONS</code>, and <code>DELETE</code> <strong>MUST NOT</strong> modify resources.</p>
 </li>
 <li>
-<p>PUT and DELETE <strong>MUST</strong> be idempotent to ensure safe retries.</p>
+<p><code>PUT</code> and <code>DELETE</code> <strong>MUST</strong> be idempotent to ensure safe retries.</p>
 </li>
 <li>
-<p>PATCH is NOT idempotent unless explicitly designed to be.</p>
+<p><code>PATCH</code> is <code>NOT</code> idempotent unless explicitly designed to be.</p>
 </li>
 <li>
-<p>POST <strong>MUST</strong> be used for non-idempotent operations such as resource
+<p><code>POST</code> <strong>MUST</strong> be used for non-idempotent operations such as resource
     creation.</p>
 </li>
 </ul>
@@ -5070,15 +5070,15 @@ behaviour.</p>
 </thead>
 <tbody>
 <tr>
-<td>Authorization</td>
+<td><code>Authorization</code></td>
 <td>Used for authentication. APIs <strong>MUST</strong> validate this header and reject malformed requests.</td>
 </tr>
 <tr>
-<td>Content-Type</td>
-<td><strong>MUST</strong> be included in requests with a body. Allowed values: <em>application/json, application/xml, multipart/form-data, application/x-www-form-urlencoded</em>.</td>
+<td><code>Content-Type</code></td>
+<td><strong>MUST</strong> be included in requests with a body. Allowed values: <em><code>application/json</code>, <code>application/xml</code>, <code>multipart/form-data</code>, <code>application/x-www-form-urlencoded</code></em>.</td>
 </tr>
 <tr>
-<td>Date</td>
+<td><code>Date</code></td>
 <td><strong>MUST</strong> be formatted as per RFC 5322, e.g. Tue, <em>11 Oct 2022 09:27:30 GMT.</em></td>
 </tr>
 </tbody>
@@ -5097,11 +5097,11 @@ behaviour.</p>
 </thead>
 <tbody>
 <tr>
-<td>Accept</td>
-<td>Specifies the response format. Default: <em>application/json</em>.</td>
+<td><code>Accept</code></td>
+<td>Specifies the response format. Default: <em><code>application/json</code></em>.</td>
 </tr>
 <tr>
-<td>Access-Control-Request-Method</td>
+<td><code>Access-Control-Request-Method</code></td>
 <td>Used in CORS preflight requests to indicate the intended HTTP method.</td>
 </tr>
 </tbody>
@@ -5116,47 +5116,47 @@ behaviour.</p>
 </thead>
 <tbody>
 <tr>
-<td>x-api-key</td>
+<td><code>x-api-key</code></td>
 <td>A legacy authentication method. <strong>MAY</strong> be used only when legacy support is required. Prefer Authorization</td>
 </tr>
 <tr>
-<td>X-Audit-Consent</td>
+<td><code>X-Audit-Consent</code></td>
 <td>JSON-encoded FHIR consent resource (base64, max 8KB).</td>
 </tr>
 <tr>
-<td>X-Audit-Device</td>
+<td><code>X-Audit-Device</code></td>
 <td>FHIR identifier for the client device (base64, max 8KB).</td>
 </tr>
 <tr>
-<td>X-Au dit-Organisation</td>
+<td><code>X-Au dit-Organisation</code></td>
 <td>FHIR identifier for the client organisation (base64, max 8KB).</td>
 </tr>
 <tr>
-<td>X-Audit-User</td>
+<td><code>X-Audit-User</code></td>
 <td>FHIR identifier for the authenticated user (base64, max 8KB).</td>
 </tr>
 <tr>
-<td>X-Au thenticated_User</td>
+<td><code>X-Au thenticated_User</code></td>
 <td>Identifies the client system for auditing.</td>
 </tr>
 <tr>
-<td>Cache-Control</td>
-<td>Controls caching (e.g. <em>no-store</em>).</td>
+<td><code>Cache-Control</code></td>
+<td>Controls caching (e.g. <em><code>no-store</code></em>).</td>
 </tr>
 <tr>
-<td>Connection</td>
-<td>Manages connection behaviour (e.g. <em>keep-alive</em>).</td>
+<td><code>Connection</code></td>
+<td>Manages connection behaviour (e.g. <em><code>keep-alive</code></em>).</td>
 </tr>
 <tr>
-<td>If-Match , If-None-Match</td>
+<td><code>If-Match</code>, <code>If-None-Match</code></td>
 <td>Used for optimistic concurrency control with resource updates.</td>
 </tr>
 <tr>
-<td>Origin</td>
+<td><code>Origin</code></td>
 <td>If present, APIs <strong>MUST</strong> validate it against a list of allowed origins to ensure security.</td>
 </tr>
 <tr>
-<td>X-Request-Id</td>
+<td><code>X-Request-Id</code></td>
 <td>A unique identifier for the API request. If not provided by the client, this identifier <strong>MAY</strong> be generated in the API Gateway.</td>
 </tr>
 </tbody>
@@ -5172,40 +5172,40 @@ behaviour.</p>
 </thead>
 <tbody>
 <tr>
-<td>Cache-Control</td>
-<td>Controls caching (e.g. <em>no-store or private, max-age=3600</em>).</td>
+<td><code>Cache-Control</code></td>
+<td>Controls caching (e.g. <em><code>no-store</code> or <code>private, max-age=3600</code></em>).</td>
 </tr>
 <tr>
-<td>Content-Security-Policy</td>
-<td>Defines security policies to mitigate XSS and injection (e.g. <em>frame-ancestors \'none\'</em>).</td>
+<td><code>Content-Security-Policy</code></td>
+<td>Defines security policies to mitigate XSS and injection (e.g. <em><code>frame-ancestors 'none'</code></em>).</td>
 </tr>
 <tr>
-<td>Content-Type</td>
-<td>Specifies the response media type (e.g. <em>application/json or application/xml</em>). Used only if a message body is returned.</td>
+<td><code>Content-Type</code></td>
+<td>Specifies the response media type (e.g. <em><code>application/json</code> or <code>application/xml</code></em>). Used only if a message body is returned.</td>
 </tr>
 <tr>
-<td>Location</td>
-<td>On successful resource creation Post, the API <strong>MUST</strong> return a 201 CREATED status and a Location header with the new resource's relative URL.</td>
+<td><code>Location</code></td>
+<td>On successful resource creation Post, the API <strong>MUST</strong> return a <code>201 CREATED</code> status and a Location header with the new resource's relative URL.</td>
 </tr>
 <tr>
-<td>Request-Id</td>
+<td><code>Request-Id</code></td>
 <td>Echoes the unique request identifier provided by the client.</td>
 </tr>
 <tr>
-<td>Strict-Transport-Security</td>
-<td>Enforces HTTPS (e.g. <em>max-age=31536000; includeSubDomains</em>).</td>
+<td><code>Strict-Transport-Security</code></td>
+<td>Enforces HTTPS (e.g. <em><code>max-age=31536000; includeSubDomains</code></em>).</td>
 </tr>
 <tr>
-<td>WWW-Authenticate</td>
-<td>Specifies the required authentication method (e.g. <em>Bearer realm=\"nhswales365\", authorization_uri=\"...\").</em></td>
+<td><code>WWW-Authenticate</code></td>
+<td>Specifies the required authentication method (e.g. <em><code>Bearer realm="nhswales365", authorization_uri="..."</code></em>).</td>
 </tr>
 <tr>
-<td>X-Content-Type-Options</td>
-<td>Prevents MIME sniffing (e.g. <em>nosniff</em>).</td>
+<td><code>X-Content-Type-Options</code></td>
+<td>Prevents MIME sniffing (e.g. <em><code>nosniff</code></em>).</td>
 </tr>
 <tr>
-<td>X-Frame-Options</td>
-<td>Prevents clickjacking (e.g. <em>SAMEORIGIN or DENY</em>).</td>
+<td><code>X-Frame-Options</code></td>
+<td>Prevents clickjacking (e.g. <em><code>SAMEORIGIN</code> or <code>DENY</code></em>).</td>
 </tr>
 </tbody>
 </table>
@@ -5219,42 +5219,45 @@ behaviour.</p>
 </thead>
 <tbody>
 <tr>
-<td>Access-Control-Allow-Origin</td>
+<td><code>Access-Control-Allow-Origin</code></td>
 <td>Specifies allowed origins for web access. If used, the value <strong>MUST</strong> be non-wildcard (i.e., <em>not *</em>).</td>
 </tr>
 <tr>
-<td>Content-Security-Policy</td>
-<td>Restricts content sources (e.g. <em>default-src \'none\'</em>).</td>
+<td><code>Content-Security-Policy</code></td>
+<td>Restricts content sources (e.g. <em><code>default-src 'none'</code></em>).</td>
 </tr>
 <tr>
-<td>Date</td>
-<td>Response timestamp in RFC 5322 format (e.g. <em>Tue, 11 Oct 2022 09:27:31 GMT</em>).</td>
+<td><code>Date</code></td>
+<td>Response timestamp in RFC 5322 format (e.g. <em><code>Tue, 11 Oct 2022 09:27:31 GMT</code></em>).</td>
 </tr>
 <tr>
-<td>ETag</td>
-<td>Indicates the resource version. Used with If-Match / If-None-Match for optimistic concurrency control.</td>
+<td><code>ETag</code></td>
+<td>Indicates the resource version. Used with <code>If-Match</code> / <code>If-None-Match</code> for optimistic concurrency control.</td>
 </tr>
 <tr>
-<td>Expires</td>
+<td><code>Expires</code></td>
 <td>The date/time after which the response is considered stale (RFC 5322 format).</td>
 </tr>
 <tr>
-<td>Feature-Policy</td>
-<td>Defines permitted client-side features (e.g. <em>none</em>).</td>
+<td><code>Feature-Policy</code></td>
+<td>Defines permitted client-side features (e.g. <em><code>none</code></em>).</td>
 </tr>
 <tr>
-<td>Referrer-Policy</td>
-<td>Specifies the level of referrer information to include (e.g. <em>no-referrer</em>).</td>
+<td><code>Referrer-Policy</code></td>
+<td>Specifies the level of referrer information to include (e.g. <em><code>no-referrer</code></em>).</td>
 </tr>
 <tr>
-<td>Retry-After</td>
+<td><code>Retry-After</code></td>
 <td>Indicates when a client should retry a failed request (expressed in seconds or as a date - RFC 5322 format. RFC 5322 is <strong>RECOMMENDED</strong>.</td>
 </tr>
 </tbody>
 </table>
 <div class="admonition tip">
 <p class="admonition-title">Practical tips</p>
-<p>Additional headers <strong>MAY</strong> be added or modified by the API gateway to <a href="../api-management/">deprecate or retire</a> an API or apply <a href="../api-management/">rate limiting</a>, for example. Speak to the platform team for more help.</p>
+<p>Additional headers <strong>MAY</strong> be added or modified by the API gateway
+to <a href="../api-management/">deprecate or retire</a> an API or apply
+<a href="../api-management/">rate limiting</a>, for example. Speak to the platform
+team for more help.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Further reading and information</p>
@@ -5266,7 +5269,7 @@ operation, as per RFC 9110. The table below lists common status codes,
 but others <strong>MAY</strong> be used if needed.</p>
 <ul>
 <li>
-<p>Yes" means the status code applies to that operation.</p>
+<p>"✅ Yes" means the status code applies to that operation.</p>
 </li>
 <li>
 <p>An empty cell means the code is not usually used for that operation.</p>
@@ -5286,7 +5289,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 </thead>
 <tbody>
 <tr>
-<td>200 OK</td>
+<td><code>200 OK</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td></td>
@@ -5295,7 +5298,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>201 CREATED</td>
+<td><code>201 CREATED</code></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5304,7 +5307,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>202 ACCEPTED</td>
+<td><code>202 ACCEPTED</code></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5313,7 +5316,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅</td>
 </tr>
 <tr>
-<td>304 NOT MODIFIED</td>
+<td><code>304 NOT MODIFIED</code></td>
 <td>See caveats below</td>
 <td></td>
 <td></td>
@@ -5322,7 +5325,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>400 BAD REQUEST</td>
+<td><code>400 BAD REQUEST</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td></td>
@@ -5331,7 +5334,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>401 UNAUTHORIZED</td>
+<td><code>401 UNAUTHORIZED</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5340,7 +5343,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>403 FORBIDDEN</td>
+<td><code>403 FORBIDDEN</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5349,7 +5352,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>404 NOT FOUND</td>
+<td><code>404 NOT FOUND</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5358,7 +5361,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>405 METHOD NOT ALLOWED</td>
+<td><code>405 METHOD NOT ALLOWED</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5367,7 +5370,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>408 REQUEST TIMEOUT</td>
+<td><code>408 REQUEST TIMEOUT</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5376,7 +5379,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>409 CONFLICT</td>
+<td><code>409 CONFLICT</code></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5385,7 +5388,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>412 PRECONDITION FAILED</td>
+<td><code>412 PRECONDITION FAILED</code></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5394,7 +5397,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>See caveats below</td>
 </tr>
 <tr>
-<td>415 UNSUPPORTED MEDIA TYPE</td>
+<td><code>415 UNSUPPORTED MEDIA TYPE</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5403,7 +5406,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>422 UNPROCESSABLE ENTITY</td>
+<td><code>422 UNPROCESSABLE ENTITY</code></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5412,7 +5415,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>428 PRECONDITIONS <strong>REQUIRED</strong></td>
+<td><code>428 PRECONDITIONS</code> <strong>REQUIRED</strong></td>
 <td></td>
 <td></td>
 <td>✅ Yes</td>
@@ -5421,7 +5424,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>See caveats below</td>
 </tr>
 <tr>
-<td>429 TOO MANY REQUESTS</td>
+<td><code>429 TOO MANY REQUESTS</code></td>
 <td>See caveats below</td>
 <td></td>
 <td></td>
@@ -5430,7 +5433,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>500 INTERNAL SERVER ERROR</td>
+<td><code>500 INTERNAL SERVER ERROR</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5439,7 +5442,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>501 NOT IMPLEMENTED</td>
+<td><code>501 NOT IMPLEMENTED</code></td>
 <td>See caveats below</td>
 <td></td>
 <td></td>
@@ -5448,7 +5451,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td></td>
 </tr>
 <tr>
-<td>502 BAD GATEWAY</td>
+<td><code>502 BAD GATEWAY</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5457,7 +5460,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>503 SERVICE UNAVAILABLE</td>
+<td><code>503 SERVICE UNAVAILABLE</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5466,7 +5469,7 @@ but others <strong>MAY</strong> be used if needed.</p>
 <td>✅ Yes</td>
 </tr>
 <tr>
-<td>504 GATEWAY TIMEOUT</td>
+<td><code>504 GATEWAY TIMEOUT</code></td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
 <td>✅ Yes</td>
@@ -5479,49 +5482,49 @@ but others <strong>MAY</strong> be used if needed.</p>
 <h3 id="caveats-and-edge-cases">Caveats and edge cases</h3>
 <ul>
 <li>
-<p>While PATCH can return 200 OK with the updated resource, 202
-    ACCEPTED is preferred for asynchronous processing. But some
-    implementations <strong>MAY</strong> choose to return 200 OK instead.</p>
+<p>While <code>PATCH</code> can return 200 <code>OK</code> with the updated resource, 202
+    <code>ACCEPTED</code> is preferred for asynchronous processing. But some
+    implementations <strong>MAY</strong> choose to return <code>200 OK</code> instead.</p>
 </li>
 <li>
-<p>304 NOT MODIFIED applies only when the API supports caching with
-    conditional GET requests. The server <strong>MAY</strong> return 304 NOT MODIFIED
+<p><code>304 NOT MODIFIED</code> applies only when the API supports caching with
+    conditional GET requests. The server <strong>MAY</strong> return <code>304 NOT MODIFIED</code>
     if the client's cached version is still valid.</p>
 </li>
 <li>
-<p>Use 409 CONFLICT when there\'s a conflict with the current state of
-    the target resource. Use 422 UNPROCESSABLE ENTITY when the server
-    understands the request but can\'t process it due to semantic
+<p>Use <code>409 CONFLICT</code>when there's a conflict with the current state of
+    the target resource. Use <code>422 UNPROCESSABLE ENTITY</code> when the server
+    understands the request but can't process it due to semantic
     errors.</p>
 </li>
 <li>
-<p>Use 409 CONFLICT when there\'s a conflict with the current state of
-    the target resource. Use 422 UNPROCESSABLE ENTITY when the server
-    understands the request but can\'t process it due to semantic
+<p>Use <code>409 CONFLICT</code>when there's a conflict with the current state of
+    the target resource. Use <code>422 UNPROCESSABLE ENTITY</code> when the server
+    understands the request but can't process it due to semantic
     errors.</p>
 </li>
 <li>
-<p>While 415 UNSUPPORTED MEDIA TYPE is typically used for POST, PUT and
-    PATCH, it <strong>MAY</strong> apply to GET if a body is sent with an unsupported
+<p>While <code>415 UNSUPPORTED MEDIA TYPE</code> is typically used for <code>POST</code>, <code>PUT</code> and
+    <code>PATCH</code>, it <strong>MAY</strong> apply to <code>GET</code> if a body is sent with an unsupported
     media type --- although this is rare.</p>
 </li>
 <li>
-<p>412 PRECONDITION FAILED and 428 PRECONDITIONS <strong>REQUIRED</strong> are typically
-    used for POST, PUT and PATCH. However, some designs <strong>MAY</strong> also
-    apply them to DETETE if preconditions are enforced.</p>
+<p><code>412 PRECONDITION FAILED</code> and <code>428 PRECONDITIONS</code> <strong>REQUIRED</strong> are typically
+    used for <code>POST</code>, <code>PUT</code> and <code>PATCH</code>. However, some designs <strong>MAY</strong> also
+    apply them to <code>DELETE</code> if preconditions are enforced.</p>
 </li>
 <li>
-<p>Use 428 PRECONDITIONS <strong>REQUIRED</strong> when the server requires the request to
+<p>Use <code>428 PRECONDITIONS</code> <strong>REQUIRED</strong> when the server requires the request to
     be conditional, typically to prevent the "lost update" problem. Use
-   412 PRECONDITION FAILED when a precondition specified in the request
+   <code>412 PRECONDITION FAILED</code> when a precondition specified in the request
    isn't met.</p>
 </li>
 <li>
-<p>Typically our API platform will apply rate limiting and return 429
-    TOO MANY REQUESTS when appropriate.</p>
+<p>Typically our API platform will apply rate limiting and return
+    <code>429 TOO MANY REQUESTS</code> when appropriate.</p>
 </li>
 <li>
-<p>Some designs <strong>MAY</strong> extend the use of 501 NOT IMPLEMENTED to other
+<p>Some designs <strong>MAY</strong> extend the use of <code>501 NOT IMPLEMENTED</code> to other
     methods if a particular method is not supported by the server.</p>
 </li>
 </ul>
